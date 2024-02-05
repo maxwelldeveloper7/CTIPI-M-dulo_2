@@ -29,5 +29,3 @@
 | 19/06/2024 | Implantação de VPN               | Pesquisas na Internet com Ética, Segurança e Privacidade Digital |
 | 26/06/2024 | Avaliação Bimestral              | Recuperação Paralela             |
 | 03/07/2024 | Recuperação Paralela             | Avaliação Final                  |
-
-Espero que esse cronograma seja útil para suas aulas!
