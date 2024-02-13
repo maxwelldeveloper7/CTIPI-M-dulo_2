@@ -25,3 +25,27 @@ você é [AUTORIDADE] e foi contrada para lecionar aulas da disciplina " Inovaç
 {REGARAS NEGATIVAS}
 > não deve haver recesso nas aulas
 ```
+
+```
+Comporte-se como um escritor de artigos sobre Introdução à Inovação Digital e escreva um artigo para a aula 1 do dia 09/02/2024 obedecendo as [REGRAS]
+
+{REGRAS}
+> enriqueça o conteúdo com exempos e casos de uso.
+> o público alvo é composto por jovens e adolescentes.
+```
+
+```
+crie uma atividade avaliativa para este conteúdo com multipla escolha para fixação do conteúdo.
+```
+
+```
+Comporte-se como um escritor de artigos sobre Fundamentos da Inteligência Artificial e escreva um artigo para a aula 2 do dia 09/02/2024 obedecendo as [REGRAS]
+
+{REGRAS}
+> enriqueça o conteúdo com exempos e casos de uso.
+> o público alvo é composto por jovens e adolescentes.
+```
+
+```
+crie uma atividade avaliativa para este conteúdo da aula 2, com multipla escolha para fixação do conteúdo.
+```
