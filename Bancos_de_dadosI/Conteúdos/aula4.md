@@ -1,4 +1,4 @@
-**Aula 4: Vantagens e Desvantagens do Uso de Bancos de Dados, Requisitos Funcionais e Componentes de um SBD**
+**Aula 6: Vantagens e Desvantagens do Uso de Bancos de Dados, Requisitos Funcionais e Componentes de um SBD**
 
 *Analisando os Prós e Contras, Requisitos e Componentes*
 
