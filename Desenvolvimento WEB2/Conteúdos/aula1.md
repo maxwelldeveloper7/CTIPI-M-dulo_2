@@ -174,3 +174,65 @@ with open('dados.json', 'w') as file:
 4. Crie um dicionário com informações de contatos (nome, e-mail, telefone) e permita a busca por um contato específico.
 
 Estes exercícios práticos irão solidificar seu entendimento sobre manipulação de arquivos e estruturas de dados em Python. Ao aplicar esses conceitos, você estará preparado para lidar eficientemente com informações e estruturar dados em seus futuros projetos. A jornada continua, e essas habilidades serão fundamentais em cada passo do seu caminho como desenvolvedor Python.
+
+## Resolução dos exercícios
+
+Vamos resolver os exercícios passo a passo:
+
+### Exercício 1: Criar um arquivo de texto contendo uma lista de itens.
+
+```python
+# Conteúdo da lista
+itens = ["item1", "item2", "item3", "item4", "item5"]
+
+# Escrever a lista no arquivo
+with open('lista_itens.txt', 'w') as file:
+    for item in itens:
+        file.write(item + '\n')
+```
+
+### Exercício 2: Ler o arquivo criado, exibindo seu conteúdo.
+
+```python
+# Ler o conteúdo do arquivo
+with open('lista_itens.txt', 'r') as file:
+    conteudo = file.read()
+    print(conteudo)
+```
+
+### Exercício 3: Utilizar uma lista para armazenar os números de 1 a 10 e remover os números pares.
+
+```python
+# Criar uma lista de números de 1 a 10
+numeros = list(range(1, 11))
+
+# Remover números pares da lista
+numeros = [num for num in numeros if num % 2 != 0]
+
+# Exibir a lista resultante
+print(numeros)
+```
+
+### Exercício 4: Criar um dicionário com informações de contatos e permitir a busca por um contato específico.
+
+```python
+# Criar um dicionário de contatos
+contatos = {
+    'Joao': {'email': 'joao@example.com', 'telefone': '123456789'},
+    'Maria': {'email': 'maria@example.com', 'telefone': '987654321'},
+    'Carlos': {'email': 'carlos@example.com', 'telefone': '555555555'}
+}
+
+# Função para buscar um contato específico
+def buscar_contato(nome):
+    if nome in contatos:
+        return contatos[nome]
+    else:
+        return 'Contato não encontrado.'
+
+# Exemplos de busca
+print(buscar_contato('Joao'))
+print(buscar_contato('Ana'))
+```
+
+Esses códigos abordam cada um dos exercícios propostos. Certifique-se de adaptar os nomes dos arquivos e os dados conforme necessário para o seu contexto.
