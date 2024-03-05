@@ -231,3 +231,230 @@ d) Não tem relevância na interconexão sócio-técnica.
 3. b) Consideração das necessidades e expectativas sociais, além de metas técnicas.
 4. b) Cria um ambiente propício para o desenvolvimento de software de alta qualidade.
 5. c) Ajustar e aprimorar tanto aspectos técnicos quanto sociais.
+<br>
+<hr><br>
+
+**Aula 7: Práticas de Engenharia de Software (Comunicação, Planejamento, Custos)**
+
+**Introdução:**
+Na aula de hoje, abordaremos práticas essenciais na Engenharia de Software, concentrando-nos em três pilares fundamentais: comunicação, planejamento e gestão de custos. Esses elementos são cruciais para o sucesso de qualquer projeto, pois afetam diretamente a eficácia da equipe, a execução do projeto e a viabilidade financeira.
+
+**Comunicação Efetiva:**
+Comecemos destacando a importância da comunicação efetiva na Engenharia de Software. Uma comunicação clara e transparente é a base para o entendimento mútuo entre membros da equipe, clientes e stakeholders. Ferramentas modernas, como plataformas colaborativas e reuniões regulares, são essenciais para manter todos informados e alinhados.
+
+**Ilustração 1 (Slide):**
+(Inserir uma representação visual de uma comunicação efetiva, incluindo ferramentas colaborativas e uma equipe interagindo.)
+
+**Planejamento Estratégico:**
+O planejamento estratégico é o alicerce para o sucesso do projeto. Isso envolve a definição clara de metas, prazos realistas e alocação eficiente de recursos. Um plano estratégico bem elaborado serve como guia, permitindo que a equipe siga uma trajetória definida rumo ao sucesso do projeto.
+
+**Ilustração 2 (Slide):**
+(Inserir um gráfico ou diagrama representando a estrutura de um planejamento estratégico, incluindo metas, prazos e recursos.)
+
+**Gestão de Custos:**
+A gestão de custos é um aspecto crítico para garantir a viabilidade financeira do projeto. Isso inclui estimativas precisas de custos, acompanhamento regular e ajustes quando necessário. Ferramentas de gestão de projetos podem ser valiosas para monitorar e controlar os custos ao longo do ciclo de vida do desenvolvimento.
+
+**Ilustração 3 (Slide):**
+(Inserir um gráfico visualizando a gestão de custos ao longo do tempo, destacando estimativas iniciais, gastos reais e ajustes.)
+
+**Metodologias Ágeis e Comunicação Iterativa:**
+Ao adotar metodologias ágeis, como Scrum, a comunicação se torna ainda mais crucial. Reuniões diárias, revisões de sprint e a interação contínua com o cliente são práticas-chave para garantir que o desenvolvimento esteja alinhado com as expectativas e seja adaptável a mudanças.
+
+**Ilustração 4 (Slide):**
+(Inserir ícones representando práticas ágeis, como reuniões diárias e revisões de sprint.)
+
+**Desafios e Estratégias para Superá-los:**
+Reconhecendo que desafios podem surgir, é fundamental discutir estratégias para superá-los. A falta de comunicação, imprevistos no planejamento e custos não previstos são obstáculos comuns. Estratégias como a implementação de feedback contínuo, revisões periódicas de planejamento e uma análise detalhada de custos ajudam a mitigar esses desafios.
+
+**Ilustração 5 (Slide):**
+(Inserir um diagrama mostrando desafios comuns e estratégias correspondentes.)
+
+**Conclusão:**
+Compreender e implementar práticas sólidas de Engenharia de Software nas áreas de comunicação, planejamento e gestão de custos são passos cruciais para o sucesso de qualquer projeto. Na próxima aula, mergulharemos no mundo visual dos diagramas UML, explorando como essas representações gráficas podem aprimorar ainda mais a compreensão e a comunicação no desenvolvimento de software.
+
+**Próxima Aula:**
+Na próxima aula, preparem-se para uma jornada visual enquanto exploramos as práticas de modelagem usando a Linguagem de Modelagem Unificada (UML). Este será um capítulo emocionante na nossa busca pelo entendimento aprofundado da Engenharia de Software.
+
+*Observação: Certifique-se de ajustar o conteúdo conforme necessário e inserir as ilustrações mencionadas nos slides para melhorar a compreensão visual.*
+
+**Atividade Avaliativa - Múltipla Escolha**
+
+**Pergunta 1:**
+Qual é a importância da comunicação efetiva na Engenharia de Software?
+
+a) Apenas para manter os membros da equipe informados.
+
+b) Para garantir a transparência nas ações da equipe.
+
+c) Não é relevante para o sucesso do projeto.
+
+d) Limita-se ao feedback do cliente.
+
+**Pergunta 2:**
+O que envolve o planejamento estratégico na Engenharia de Software?
+
+a) Definição clara de metas, prazos realistas e alocação eficiente de recursos.
+
+b) Apenas estimativas de custos.
+
+c) Ignorar prazos e focar exclusivamente em metas técnicas.
+
+d) Ausência de alocação eficiente de recursos.
+
+**Pergunta 3:**
+Por que a gestão de custos é considerada crítica na Engenharia de Software?
+
+a) Para aumentar a complexidade do projeto.
+
+b) Apenas para estimativas iniciais.
+
+c) Garantir a viabilidade financeira do projeto.
+
+d) Não afeta o sucesso do desenvolvimento.
+
+**Pergunta 4:**
+Como as metodologias ágeis, como Scrum, abordam a comunicação?
+
+a) Limitando a interação com o cliente.
+
+b) Realizando reuniões mensais.
+
+c) Enfatizando a comunicação diária, revisões de sprint e interação contínua com o cliente.
+
+d) Ignorando a importância da comunicação.
+
+**Pergunta 5:**
+Quais são algumas estratégias para superar desafios na Engenharia de Software, conforme discutido na aula?
+
+a) Ignorar feedback contínuo e revisões de planejamento.
+
+b) Não considerar imprevistos no planejamento.
+
+c) Implementar feedback contínuo, revisões periódicas de planejamento e análise detalhada de custos.
+
+d) Evitar discussões sobre desafios.
+
+**Respostas:**
+1. b) Para garantir a transparência nas ações da equipe.
+2. a) Definição clara de metas, prazos realistas e alocação eficiente de recursos.
+3. c) Garantir a viabilidade financeira do projeto.
+4. c) Enfatizando a comunicação diária, revisões de sprint e interação contínua com o cliente.
+5. c) Implementar feedback contínuo, revisões periódicas de planejamento e análise detalhada de custos.
+
+<br><hr><br>
+
+**Aula 8: Modelagem em Engenharia de Software**
+
+**Introdução:**
+Na aula de hoje, exploraremos o fascinante mundo da modelagem em Engenharia de Software. A modelagem desempenha um papel crucial na compreensão, visualização e comunicação de conceitos complexos durante o desenvolvimento de software. Vamos mergulhar nas práticas de modelagem e entender como as representações visuais podem aprimorar significativamente o processo de design e desenvolvimento.
+
+**Importância da Modelagem:**
+A modelagem é uma ferramenta poderosa que permite aos engenheiros de software criar representações visuais abstratas de sistemas complexos. Ela facilita a comunicação entre membros da equipe, clientes e stakeholders, proporcionando uma compreensão compartilhada dos requisitos e do design do software.
+
+**Ilustração 1 (Slide):**
+(Inserir um exemplo de diagrama UML básico para destacar a importância da modelagem visual.)
+
+**Linguagem de Modelagem Unificada (UML):**
+A UML é uma linguagem padrão amplamente adotada para a modelagem em Engenharia de Software. Ela oferece uma variedade de diagramas, cada um focado em aspectos específicos do sistema, como estrutura, comportamento e interação. Vamos explorar alguns dos principais tipos de diagramas UML.
+
+**Diagrama de Casos de Uso:**
+O diagrama de casos de uso é fundamental para identificar as interações entre os atores (usuários) e o sistema. Ele descreve as funcionalidades do sistema do ponto de vista do usuário, fornecendo uma visão clara dos requisitos funcionais.
+
+**Ilustração 2 (Slide):**
+(Inserir um exemplo de diagrama de casos de uso com atores e casos de uso identificados.)
+
+**Diagrama de Classes:**
+O diagrama de classes representa a estrutura estática do sistema, mostrando as classes, seus atributos e os relacionamentos entre elas. Essa representação é vital para o design e a organização eficiente do código-fonte.
+
+**Ilustração 3 (Slide):**
+(Inserir um exemplo de diagrama de classes com classes, atributos e relacionamentos destacados.)
+
+**Diagrama de Sequência:**
+O diagrama de sequência ilustra a interação entre objetos ao longo do tempo. Ele é valioso para compreender a dinâmica do sistema, especialmente em cenários onde a ordem das operações é crucial.
+
+**Ilustração 4 (Slide):**
+(Inserir um exemplo de diagrama de sequência mostrando a interação temporal entre objetos.)
+
+**Diagrama de Atividades:**
+O diagrama de atividades modela o fluxo de atividades em um processo. Ele é útil para representar a lógica de controle em algoritmos, fluxos de trabalho e procedimentos.
+
+**Ilustração 5 (Slide):**
+(Inserir um exemplo de diagrama de atividades com atividades, decisões e fluxos destacados.)
+
+**Vantagens da Modelagem Visual:**
+Além de facilitar a compreensão, a modelagem visual oferece vantagens como a detecção precoce de problemas, a facilitação da colaboração e a promoção da reutilização de componentes. Ela serve como uma ponte entre a concepção abstrata e a implementação concreta do software.
+
+**Ilustração 6 (Slide):**
+(Inserir uma tabela ou gráfico destacando as vantagens da modelagem visual.)
+
+**Conclusão:**
+Nesta aula, exploramos a importância da modelagem em Engenharia de Software, especialmente com a Linguagem de Modelagem Unificada (UML). Na próxima aula, abordaremos práticas específicas de metodologias ágeis, como Scrum, e como a modelagem se integra a essas abordagens adaptativas.
+
+**Próxima Aula:**
+Na próxima aula, preparem-se para uma exploração profunda das práticas de modelagem em ambientes ágeis, compreendendo como a agilidade e a modelagem visual podem coexistir harmoniosamente.
+
+*Observação: Certifique-se de ajustar o conteúdo conforme necessário e inserir as ilustrações mencionadas nos slides para melhorar a compreensão visual.*
+
+**Atividade Avaliativa - Múltipla Escolha**
+
+**Pergunta 1:**
+Por que a modelagem é considerada uma ferramenta poderosa na Engenharia de Software?
+
+a) Apenas para tornar o processo mais complexo.
+
+b) Facilita a comunicação, visualização e compreensão de sistemas complexos.
+
+c) Limita a comunicação entre membros da equipe.
+
+d) Aumenta a complexidade do design de software.
+
+**Pergunta 2:**
+Qual é a linguagem padrão amplamente adotada para a modelagem em Engenharia de Software?
+
+a) C++.
+
+b) Java.
+
+c) Linguagem de Modelagem Unificada (UML).
+
+d) Python.
+
+**Pergunta 3:**
+Qual é a função principal do diagrama de casos de uso?
+
+a) Representar a estrutura estática do sistema.
+
+b) Ilustrar a interação entre objetos ao longo do tempo.
+
+c) Descrever as funcionalidades do sistema do ponto de vista do usuário.
+
+d) Modelar o fluxo de atividades em um processo.
+
+**Pergunta 4:**
+O que o diagrama de classes representa?
+
+a) O fluxo de atividades em um processo.
+
+b) A interação entre objetos ao longo do tempo.
+
+c) A estrutura estática do sistema, mostrando classes, atributos e relacionamentos.
+
+d) As decisões e fluxos em um algoritmo.
+
+**Pergunta 5:**
+Qual é a utilidade do diagrama de sequência?
+
+a) Representar a lógica de controle em algoritmos.
+
+b) Descrever as funcionalidades do sistema do ponto de vista do usuário.
+
+c) Modelar o fluxo de atividades em um processo.
+
+d) Ilustrar a interação temporal entre objetos.
+
+**Respostas:**
+1. b) Facilita a comunicação, visualização e compreensão de sistemas complexos.
+2. c) Linguagem de Modelagem Unificada (UML).
+3. c) Descrever as funcionalidades do sistema do ponto de vista do usuário.
+4. c) A estrutura estática do sistema, mostrando classes, atributos e relacionamentos.
+5. d) Ilustrar a interação temporal entre objetos.
