@@ -458,3 +458,167 @@ d) Ilustrar a interação temporal entre objetos.
 3. c) Descrever as funcionalidades do sistema do ponto de vista do usuário.
 4. c) A estrutura estática do sistema, mostrando classes, atributos e relacionamentos.
 5. d) Ilustrar a interação temporal entre objetos.
+<br><hr><br>
+**Aula 9: Construção e Implantação de Software**
+
+**Introdução:**
+Bem-vindos à aula de hoje, na qual mergulharemos nos estágios cruciais da construção e implantação de software. Essas fases representam a materialização dos conceitos modelados, transformando ideias abstratas em sistemas funcionais. Vamos explorar as práticas e considerações essenciais para garantir uma construção eficiente e uma implantação bem-sucedida.
+
+**Fase de Construção:**
+A fase de construção é o ponto em que o código-fonte é efetivamente desenvolvido com base nos modelos e diagramas previamente elaborados. Essa etapa envolve a tradução das representações visuais em linguagem de programação, implementando as funcionalidades planejadas.
+
+**Ilustração 1 (Slide):**
+(Inserir uma representação visual do fluxo da fase de construção, desde os modelos até o código-fonte.)
+
+**Práticas de Codificação:**
+Durante a codificação, é crucial adotar práticas de desenvolvimento de software eficientes. Isso inclui a aplicação de boas práticas de codificação, a modularização do código para facilitar a manutenção e a realização de testes unitários para garantir a qualidade do código.
+
+**Ilustração 2 (Slide):**
+(Inserir uma representação visual de práticas de codificação eficientes, como codificação limpa e testes unitários.)
+
+**Integração Contínua:**
+A integração contínua desempenha um papel vital na fase de construção. Automatizar o processo de integração, combinando frequentemente as alterações no código, ajuda a identificar e corrigir problemas mais cedo no ciclo de desenvolvimento.
+
+**Ilustração 3 (Slide):**
+(Inserir um fluxograma visualizando o conceito de integração contínua, destacando a automação e os benefícios.)
+
+**Fase de Implantação:**
+Com o software construído, entramos na fase de implantação, onde o produto é disponibilizado para os usuários finais. Isso envolve a instalação do software em ambientes específicos e a configuração para garantir um desempenho otimizado.
+
+**Ilustração 4 (Slide):**
+(Inserir uma representação visual do fluxo da fase de implantação, desde a preparação até a entrega final aos usuários.)
+
+**Testes de Aceitação:**
+Antes da entrega final, são conduzidos testes de aceitação para garantir que o software atenda aos requisitos do cliente. Isso inclui testes de funcionalidade, desempenho e usabilidade para validar a conformidade do sistema.
+
+**Ilustração 5 (Slide):**
+(Inserir uma matriz de testes de aceitação destacando diferentes aspectos, como funcionalidade e desempenho.)
+
+**Monitoramento e Manutenção:**
+Após a implantação, é crucial monitorar o desempenho do software em ambiente real. O monitoramento contínuo ajuda a identificar problemas e permite atualizações e melhorias contínuas.
+
+**Ilustração 6 (Slide):**
+(Inserir gráficos ou gráficos destacando a importância do monitoramento contínuo e manutenção pós-implantação.)
+
+**Considerações de Segurança:**
+Durante todas as fases, é imperativo incorporar práticas de segurança. Isso envolve a proteção do software contra ameaças, a implementação de boas práticas de segurança de código e a garantia de conformidade com regulamentações relevantes.
+
+**Ilustração 7 (Slide):**
+(Inserir ícones representando práticas de segurança, como cadeado, escudo, etc.)
+
+**Conclusão:**
+Nesta aula, exploramos as fases críticas de construção e implantação de software, destacando práticas essenciais para garantir o sucesso do desenvolvimento. Na próxima aula, discutiremos as metodologias ágeis de desenvolvimento e como elas influenciam essas fases, promovendo uma abordagem flexível e adaptativa.
+
+**Próxima Aula:**
+Preparem-se para uma exploração emocionante das metodologias ágeis na construção e implantação de software, e como essas abordagens podem transformar positivamente o desenvolvimento de software.
+
+*Observação: Certifique-se de ajustar o conteúdo conforme necessário e inserir as ilustrações mencionadas nos slides para melhorar a compreensão visual.*
+
+**Atividade Avaliativa - Múltipla Escolha**
+
+**Pergunta 1:**
+O que representa a fase de construção no desenvolvimento de software?
+
+a) Instalação do software nos ambientes finais.
+
+b) Desenvolvimento do código-fonte com base nos modelos e diagramas.
+
+c) Testes de aceitação para garantir a conformidade do sistema.
+
+d) Monitoramento contínuo do desempenho do software.
+
+**Pergunta 2:**
+Qual é a importância da integração contínua na fase de construção?
+
+a) Automatizar o processo de integração para identificar e corrigir problemas mais cedo.
+
+b) Atrasar a identificação de problemas no código.
+
+c) Limitar a frequência das alterações no código.
+
+d) Ignorar a automação na integração.
+
+**Pergunta 3:**
+O que envolve a fase de implantação no desenvolvimento de software?
+
+a) Desenvolvimento do código-fonte.
+
+b) Configuração do ambiente para garantir desempenho otimizado.
+
+c) Realização de testes de aceitação.
+
+d) Identificação de problemas no código.
+
+**Pergunta 4:**
+Por que os testes de aceitação são conduzidos antes da entrega final do software?
+
+a) Garantir a conformidade com regulamentações relevantes.
+
+b) Monitorar o desempenho contínuo do software.
+
+c) Validar que o software atende aos requisitos do cliente.
+
+d) Ignorar a qualidade do software.
+
+**Pergunta 5:**
+Qual é a importância do monitoramento contínuo após a implantação do software?
+
+a) Proteger o software contra ameaças.
+
+b) Identificar problemas e permitir atualizações e melhorias contínuas.
+
+c) Automatizar o processo de integração.
+
+d) Desenvolver o código-fonte.
+
+**Respostas:**
+1. b) Desenvolvimento do código-fonte com base nos modelos e diagramas.
+2. a) Automatizar o processo de integração para identificar e corrigir problemas mais cedo.
+3. b) Configuração do ambiente para garantir desempenho otimizado.
+4. c) Validar que o software atende aos requisitos do cliente.
+5. b) Identificar problemas e permitir atualizações e melhorias contínuas.
+
+<br><hr><br>
+
+**Aula 10: Revisão e Atividades Práticas**
+
+**Introdução:**
+Chegamos à última aula do nosso curso, e é hora de revisar os conceitos fundamentais abordados até agora. Além disso, teremos algumas atividades práticas para consolidar o conhecimento adquirido ao longo das aulas. Esta revisão é crucial para fortalecer o entendimento e preparar vocês para aplicar os conceitos aprendidos na prática.
+
+**Revisão dos Tópicos-Chave:**
+Vamos começar relembrando os tópicos-chave que exploramos ao longo do curso. Desde os princípios da Engenharia de Software até as fases de construção e implantação, recapitularemos os conceitos essenciais que formam a base deste curso.
+
+**Ilustração 1 (Slide):**
+(Inserir um slide com uma linha do tempo ou diagrama visual destacando os tópicos-chave abordados em cada aula.)
+
+**Atividade de Revisão:**
+Para a atividade de revisão, proponho uma discussão em grupo sobre a interconexão entre diferentes tópicos. Como a modelagem visual influencia a fase de construção? Como as práticas de Engenharia de Software se alinham com os princípios ágeis? Essa atividade promoverá uma compreensão mais profunda das relações entre os conceitos.
+
+**Ilustração 2 (Slide):**
+(Inserir um slide com perguntas-chave para a discussão em grupo, destacando a interconexão entre os tópicos.)
+
+**Estudo de Caso:**
+Vamos analisar um estudo de caso prático para aplicar os conhecimentos adquiridos. O estudo de caso proporcionará uma oportunidade para vocês aplicarem os conceitos teóricos em um cenário realista, enfrentando desafios e tomando decisões como engenheiros de software.
+
+**Ilustração 3 (Slide):**
+(Inserir um slide apresentando o estudo de caso, destacando os principais desafios a serem abordados.)
+
+**Discussão em Sala:**
+Incentivo a participação ativa durante a discussão do estudo de caso. Como engenheiros de software em formação, compartilhem suas análises, soluções propostas e desafios encontrados. Essa troca de ideias promoverá uma compreensão mais holística e prática dos conceitos.
+
+**Ilustração 4 (Slide):**
+(Inserir um slide destacando a importância da participação ativa na discussão do estudo de caso.)
+
+**Avaliação de Aprendizado:**
+Para concluir, realizaremos uma avaliação de aprendizado. Será uma oportunidade para vocês aplicarem seus conhecimentos de forma individual. A avaliação abordará aspectos-chave do curso, garantindo que os principais conceitos foram compreendidos e retidos.
+
+**Ilustração 5 (Slide):**
+(Inserir um slide com as instruções para a avaliação de aprendizado, destacando a importância da revisão para o sucesso na avaliação.)
+
+**Conclusão:**
+Parabéns por chegarem até o final deste curso! Ao revisarmos os tópicos e aplicarmos o conhecimento em atividades práticas, tenho certeza de que estão prontos para enfrentar os desafios da Engenharia de Software. Lembrem-se de que a aprendizagem é um processo contínuo, e agora vocês têm as bases sólidas para continuar explorando e aprimorando suas habilidades nesta área dinâmica.
+
+**Próximos Passos:**
+À medida que encerramos este curso, considerem continuar a explorar tópicos avançados, participar de projetos práticos e manter-se atualizados com as tendências emergentes na Engenharia de Software. O aprendizado nunca termina, e a jornada agora está em suas mãos.
+
+*Observação: Certifique-se de ajustar o conteúdo conforme necessário e inserir as ilustrações mencionadas nos slides para melhorar a compreensão visual.*
