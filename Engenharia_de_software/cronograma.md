@@ -7,6 +7,7 @@ Claro, eu posso ajudar a criar um plano de 58 aulas para o componente curricular
 4. Aula 4: Visão geral dos modelos de processo de software.
 
 **Módulo 2: Processo de Desenvolvimento de Software (Aulas 5-10)**
+
 5. Aula 5: Compreensão do processo de desenvolvimento de software.
 6. Aula 6: Interconexão sócio-técnica na engenharia de software.
 7. Aula 7: Práticas de Engenharia de Software (comunicação, planejamento, custos).
@@ -15,6 +16,7 @@ Claro, eu posso ajudar a criar um plano de 58 aulas para o componente curricular
 10. Aula 10: Revisão e atividades práticas.
 
 **Módulo 3: Modelos Prescritivos de Processos (Aulas 11-15)**
+
 11. Aula 11: Definição e características dos modelos prescritivos de processos.
 12. Aula 12: Estudo de caso em modelos prescritivos.
 13. Aula 13: Diagramas UML - Parte 1.
@@ -22,6 +24,7 @@ Claro, eu posso ajudar a criar um plano de 58 aulas para o componente curricular
 15. Aula 15: Aplicações práticas dos diagramas UML.
 
 **Módulo 4: Métodos Ágeis (Aulas 16-25)**
+
 16. Aula 16: Introdução às Metodologias Ágeis.
 17. Aula 17: Princípios e benefícios das Metodologias Ágeis.
 18. Aula 18: Técnicas ágeis de mercado.
@@ -34,6 +37,7 @@ Claro, eu posso ajudar a criar um plano de 58 aulas para o componente curricular
 25. Aula 25: Revisão e atividades práticas.
 
 **Módulo 5: Engenharia de Requisitos e Projeto de Software (Aulas 26-38)**
+
 26. Aula 26: Conceitos-chave em Engenharia de Requisitos.
 27. Aula 27: Processo de Engenharia de Requisitos.
 28. Aula 28: Documentação de requisitos.
@@ -45,6 +49,7 @@ Claro, eu posso ajudar a criar um plano de 58 aulas para o componente curricular
 34. Aula 34: Revisão de projeto e feedback.
 
 **Módulo 6: Ferramentas e Práticas Avançadas (Aulas 39-48)**
+
 35. Aula 35: Gerenciamento de configuração de software.
 36. Aula 36: Importância e aplicação de ferramentas CASE.
 37. Aula 37: CMMI (Modelo de Capacidade e Maturidade Integrado).
@@ -54,9 +59,10 @@ Claro, eu posso ajudar a criar um plano de 58 aulas para o componente curricular
 41. Aula 41: Revisão e práticas de qualidade.
 
 **Módulo 7: Revisão e Projeto Final (Aulas 49-58)**
-42-48. Aulas de revisão para todos os tópicos.
-49-56. Desenvolvimento de projetos práticos em grupos.
-57. Apresentação dos projetos finais.
-58. Encerramento do curso, feedback e avaliação.
+
+42. Aulas de revisão para todos os tópicos.
+43. Desenvolvimento de projetos práticos em grupos.
+44. Apresentação dos projetos finais.
+45. Encerramento do curso, feedback e avaliação.
 
 Este é apenas um esboço geral. Você pode ajustar as aulas conforme necessário e distribuir o conteúdo de acordo com a carga horária de cada aula. Certifique-se de incluir atividades práticas, estudos de caso e avaliações para garantir a aplicação prática dos conceitos aprendidos.
