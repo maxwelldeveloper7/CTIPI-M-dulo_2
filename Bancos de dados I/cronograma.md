@@ -14,6 +14,7 @@
 ---
 
 **Semana 3-4: Modelo Conceitual de Entidades e Relacionamentos (MER) (Aulas 11-20)**
+
 6. Aula 11-12: Introdução ao Modelo Conceitual de Entidades e Relacionamentos (MER)
 7. Aula 13-14: Objetivos e Aplicações do MER
 8. Aula 15-16: Componentes e Estruturas do MER
@@ -23,6 +24,7 @@
 ---
 
 **Semana 5-7: Projeto de Banco de Dados (Aulas 21-35)**
+
 11. Aula 21-22: Dependência Funcional e Chaves em Banco de Dados
 12. Aula 23-24: Normalização em Banco de Dados - Primeira a Terceira Forma Normal
 13. Aula 25-26: Normalização em Banco de Dados - Formas Normais Superiores
@@ -35,6 +37,7 @@
 ---
 
 **Semana 8-10: Administração de Sistemas de Gerenciamento de Banco de Dados (Aulas 36-50)**
+
 19. Aula 36-37: Técnicas de Administração de SGBD
 20. Aula 38-39: Backup, Restauração e Recuperação de Banco de Dados
 21. Aula 40-41: Monitoramento e Otimização de Desempenho em SGBD
@@ -47,6 +50,7 @@
 ---
 
 **Semana 11-12: Revisão Final e Projeto Integrado (Aulas 51-56)**
+
 27. Aula 51-52: Revisão Geral dos Tópicos Abordados
 28. Aula 53-54: Apresentação e Avaliação de Projetos Integrados dos Estudantes
 29. Aula 55-56: Considerações Finais, Feedback e Encerramento do Curso
