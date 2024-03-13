@@ -19,13 +19,13 @@
 
 | Data       | Aula 1                           | Aula 2                           |
 |------------|----------------------------------|----------------------------------|
-| 24/04/2024 | Conceitos Básicos de Segurança da Informação | Tipos de Vírus                   |
-| 08/05/2024 | Requisitos Básicos de Segurança  | Segurança em Redes Físicas e Lógicas |
-| 15/05/2024 | Principais Tipos de Ataques e Medidas de Segurança | Procedimentos de Backup          |
-| 22/05/2024 | Política Básica de Segurança da Informação | Normas e Legislações             |
-| 29/05/2024 | Configuração de Sistemas de Proteção | Antivírus e Firewalls            |
-| 05/06/2024 | Proxy e Detecção de Intrusão     | Autenticação e Criptografia      |
-| 12/06/2024 | Assinatura Digital e Infraestrutura de Chaves Públicas e Privadas | Protocolos de Segurança          |
-| 19/06/2024 | Implantação de VPN               | Pesquisas na Internet com Ética, Segurança e Privacidade Digital |
+| 24/04/2024 | aula02 27/02 | aula01 21/02                   |
+| 08/05/2024 | aula02 21/02  | Aula01 28/02 |
+| 15/05/2024 | aula02 28/02 | aula01 06/03         |
+| 22/05/2024 | aula02 06/03 | aula01 13/03             |
+| 29/05/2024 | aula02 06/03 | aula01 20/03            |
+| 05/06/2024 | aula02 20/03     | aula01 27/03      |
+| 12/06/2024 | aula02 27/03 | aula01 03/04          |
+| 19/06/2024 | aula02 03/04               | aula01 10/04 |
 | 26/06/2024 | Avaliação Bimestral              | Recuperação Paralela             |
 | 03/07/2024 | Recuperação Paralela             | Avaliação Final                  |
