@@ -1,4 +1,4 @@
-**Semana 9-10: Banco de Dados e SQLAlchemy**
+**Aula 5: Banco de Dados e SQLAlchemy**
 
 Nesta semana, mergulharemos no emocionante mundo dos bancos de dados em aplicações web com Python. Veremos como integrar bancos de dados em nossos projetos Flask usando SQLAlchemy, uma poderosa biblioteca de mapeamento objeto-relacional (ORM) que simplifica o acesso e manipulação de dados.
 
@@ -299,3 +299,47 @@ Aqui está um exemplo de como seria o template `atualizar_preco.html`:
 ```
 
 Este formulário HTML permite que os usuários atualizem o preço de um produto específico fornecendo o novo preço. Quando o formulário é enviado, os dados são enviados para a rota `/atualizar_preco/<int:id>`, onde são processados pela função `atualizar_preco()` e o preço do produto é atualizado no banco de dados.
+
+**Atividade Complementar**
+
+**Pergunta 1:** Qual é a função do SQLAlchemy em uma aplicação Flask que utiliza um banco de dados relacional?
+
+a) Criar interfaces de usuário interativas.  
+b) Simplificar a configuração do servidor Flask.  
+c) Facilitar o acesso e manipulação de dados do banco de dados.  
+d) Gerenciar a estilização e layout das páginas HTML.
+
+**Pergunta 2:** O que é um modelo de dados em uma aplicação Flask com SQLAlchemy?
+
+a) Um tipo de gráfico que representa a interação entre diferentes páginas da web.  
+b) Uma ferramenta para criar páginas HTML dinâmicas.  
+c) Uma representação em código de uma tabela no banco de dados.  
+d) Um padrão de design para a estruturação de arquivos e pastas.
+
+**Pergunta 3:** Qual é a função do método `query.all()` em SQLAlchemy?
+
+a) Atualizar todos os registros no banco de dados.  
+b) Remover todos os registros do banco de dados.  
+c) Consultar todos os registros de uma tabela no banco de dados.  
+d) Inserir novos registros no banco de dados.
+
+**Pergunta 4:** Qual é o propósito do método `get_or_404()` em SQLAlchemy?
+
+a) Criar um novo registro no banco de dados.  
+b) Atualizar um registro específico no banco de dados.  
+c) Consultar um registro específico no banco de dados ou retornar um erro 404 se não for encontrado.  
+d) Remover um registro específico do banco de dados.
+
+**Pergunta 5:** O que é uma rota em uma aplicação Flask?
+
+a) Um caminho físico no sistema de arquivos onde os arquivos do projeto são armazenados.  
+b) Uma função que renderiza um template HTML.  
+c) Um URL específico que corresponde a uma função ou recurso em uma aplicação Flask.  
+d) Uma biblioteca que fornece recursos adicionais para o Flask.
+
+**Respostas:**
+1. c) Facilitar o acesso e manipulação de dados do banco de dados.
+2. c) Uma representação em código de uma tabela no banco de dados.
+3. c) Consultar todos os registros de uma tabela no banco de dados.
+4. c) Consultar um registro específico no banco de dados ou retornar um erro 404 se não for encontrado.
+5. c) Um URL específico que corresponde a uma função ou recurso em uma aplicação Flask.
