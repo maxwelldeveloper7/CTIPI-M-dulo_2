@@ -28,22 +28,23 @@
             </tr>
         </thead>
         <tbody>
-            {% if not produtos:%}
-            <tr>
-                <td colspan="5">Não há produtos cadastrados</td>
-            </tr>
+            {% if not produtos: %}
+                <tr>
+                    <td colspan="5">Não há produtos cadastrados</td>
+                </tr>
+            {% else %}
+                {% for produto in produtos %}
+                <tr>
+                    <td>{{ produto.id }}</td>
+                    <td>{{ produto.nome }}</td>
+                    <td>{{ produto.preco }}</td>
+                    <td>{{ produto.quantidade_estoque }}</td>
+                    <td><a href="{{ url_for('editar_produto', id=produto.id) }}">Editar</a>
+                        <a href="{{ url_for('excluir_produto', id=produto.id) }}">Excluir</a>
+                    </td>
+                </tr>
+                {% endfor %}
             {% endif %}
-            {% for produto in produtos %}
-            <tr>
-                <td>{{ produto.id }}</td>
-                <td>{{ produto.nome }}</td>
-                <td>{{ produto.preco }}</td>
-                <td>{{ produto.quantidade_estoque }}</td>
-                <td><a href="{{ url_for('editar_produto', id=produto.id) }}">Editar</a>
-                    <a href="{{ url_for('excluir_produto', id=produto.id) }}">Excluir</a>
-                </td>
-            </tr>
-            {% endfor %}
         </tbody>
     </table>
     </main>

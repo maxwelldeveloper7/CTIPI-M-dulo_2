@@ -32,8 +32,7 @@ def adicionar_produto():
 @app.route('/listar_produtos')
 def listar_produtos():
     db.create_all()
-    produtos = Produto.query.all()
-    
+    produtos = Produto.query.all()    
     return render_template('listar_produtos.html', produtos=produtos)
 
 
