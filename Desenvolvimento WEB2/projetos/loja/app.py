@@ -1,9 +1,8 @@
-from flask import Flask, render_template, request, redirect, url_for, flash
+from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///loja_online.db'
-app.config['SECRET_KEY'] = 'chavesecreta'
 db = SQLAlchemy(app)
 
 class Produto(db.Model):
@@ -25,7 +24,6 @@ def adicionar_produto():
         db.create_all()
         db.session.add(novo_produto)
         db.session.commit()
-        flash("Produto adicionado com sucesso!")
         return redirect(url_for('listar_produtos'))
     return render_template('adicionar_produto.html')
 
@@ -47,7 +45,6 @@ def editar_produto(id):
         produto.quantidade_estoque = int(request.form['quantidade_estoque'])
 
         db.session.commit()  # Atualiza o produto no banco de dados
-        flash("Produto atualizado com sucesso!")
         return redirect(url_for('listar_produtos'))  # Retorna para a lista de produtos
 
     # Renderiza um formulário para editar o produto com valores atuais
@@ -59,7 +56,6 @@ def excluir_produto(id):
     produto = Produto.query.get_or_404(id)
     db.session.delete(produto)
     db.session.commit()
-    flash("Produto excluído com sucesso!")
     return redirect(url_for('listar_produtos'))
 
 

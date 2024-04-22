@@ -1,5 +1,8 @@
 /* Estilos básicos para a página */
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -11,13 +14,20 @@ body {
 header {
     background-color: #4CAF50;
     color: white;
-    padding: 10px;
+    text-align: center;
+    width: 60%;
+}
+
+h1{
+    font-size: 1.5rem;
+    margin: 30px 0 10px 0;
     text-align: center;
 }
 
 /* Estilos para navegação */
 nav {
     text-align: center;
+    margin: 20px 0px 10px 0px;
 }
 
 nav ul {
@@ -42,8 +52,7 @@ nav ul li a:hover {
 
 /* Estilos para tabelas */
 table {
-    width: 100%;
-    border-collapse: collapse;
+    width: 60%;    
 }
 
 th, td {
@@ -54,7 +63,7 @@ th, td {
 th {
     background-color: #4CAF50;
     color: white;
-    text-align: left;
+    text-align: center;
 }
 
 tr:nth-child(even) {
@@ -67,28 +76,25 @@ tr:hover {
 
 /* Estilos para formulários */
 form {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 20px;
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
 
-form div {
-    margin-bottom: 10px;
-}
-
 label {
-    display: block;
     margin-bottom: 5px;
 }
 
 input {
-    width: 100%;
+    width: auto;
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 button {
@@ -98,6 +104,8 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 20%;
+    margin-bottom: 15px;
 }
 
 button:hover {
@@ -112,4 +120,34 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.id__tamanho{
+    width: 150px;
+}
+
+
+.preco__tamanho{
+    width: 150px;
+}
+
+.estoque__tamanho{
+    width: 150px;
+}
+
+.acoes__tamanho{
+    width: 100px;
+}
+
+.acoes__alinhamento{
+    text-align: center;
+}
+
+.id__alinhamento, .quantidade__alinhamento, .preco__alinhamento{
+    text-align: right;
+    padding-right: 10px;
+}
+
+.message__sem_registros{
+    text-align: center;
 }
