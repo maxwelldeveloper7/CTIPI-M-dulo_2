@@ -426,3 +426,384 @@ d) Refletir sobre o trabalho realizado e identificar oportunidades de melhoria p
 3. b) Uma lista de todas as tarefas necessárias para entregar os itens selecionados do Product Backlog durante uma Sprint.
 4. c) Sprint Review.
 5. d) Refletir sobre o trabalho realizado e identificar oportunidades de melhoria para o próximo Sprint.
+
+<hr>
+
+**Aula 20: Scrum - Práticas e Rituais**
+
+**Introdução ao Scrum**
+O Scrum é uma das metodologias ágeis mais populares para a gestão de projetos e desenvolvimento de software. Esta metodologia é conhecida por seu enfoque em ciclos curtos, chamados Sprints, bem como por sua estrutura de papéis, artefatos e eventos (ou rituais) bem definidos. Nesta aula, vamos aprofundar as práticas e rituais do Scrum, compreendendo como eles contribuem para a entrega de produtos de alta qualidade de maneira eficiente e colaborativa.
+
+**Ilustração 1 (Slide):**
+(Inserir uma ilustração que mostre o ciclo de trabalho do Scrum, destacando os principais eventos e artefatos.)
+
+### Papéis no Scrum
+Antes de falar sobre práticas e rituais, é importante recordar os papéis fundamentais no Scrum:
+- **Product Owner (PO):** Representa os interesses do cliente e do negócio. Ele define e prioriza os itens do Product Backlog.
+- **Scrum Master (SM):** Facilita o processo do Scrum, removendo impedimentos e garantindo a adesão ao framework.
+- **Equipe de Desenvolvimento:** Um grupo autogerenciado que desenvolve incrementos do produto.
+
+**Eventos do Scrum (Rituais)**
+O Scrum possui uma série de eventos essenciais para manter o fluxo de trabalho e promover a transparência. Estes eventos são:
+
+1. **Sprint Planning:** Esse evento é onde começa a Sprint. A equipe e o Product Owner se reúnem para discutir quais itens do Product Backlog serão trabalhados na próxima Sprint. O resultado é o Sprint Backlog, que contém as tarefas necessárias para atingir o objetivo da Sprint. É uma boa prática dividir o Sprint Planning em duas partes: a primeira focada no "o quê" (escolha dos itens), e a segunda no "como" (planejamento do trabalho).
+
+**Ilustração 2 (Slide):**
+(Inserir uma ilustração do Sprint Planning, mostrando a interação entre a equipe, Scrum Master e Product Owner.)
+
+2. **Daily Scrum:** Uma reunião diária de 15 minutos, também conhecida como "stand-up meeting", onde a equipe de desenvolvimento discute seu progresso, planejamentos para o dia e identifica impedimentos. Este ritual promove a comunicação constante entre os membros da equipe e ajuda a identificar problemas rapidamente.
+
+**Ilustração 3 (Slide):**
+(Inserir uma ilustração do Daily Scrum, destacando o círculo dos participantes e a curta duração do evento.)
+
+3. **Sprint Review:** Realizado ao final de cada Sprint, o Sprint Review permite que a equipe mostre o incremento do produto ao Product Owner e a outras partes interessadas. É uma oportunidade para receber feedback e alinhar expectativas sobre o progresso do projeto.
+
+**Ilustração 4 (Slide):**
+(Inserir uma imagem do Sprint Review, com a equipe apresentando o resultado do trabalho para o Product Owner e stakeholders.)
+
+4. **Sprint Retrospective:** Este evento acontece após o Sprint Review e é uma reunião interna da equipe, facilitada pelo Scrum Master. O objetivo é refletir sobre o trabalho da Sprint concluída, identificar áreas para melhoria e criar planos de ação para a próxima Sprint.
+
+**Práticas do Scrum**
+Além dos eventos, o Scrum incorpora diversas práticas que contribuem para sua eficácia. Algumas das principais práticas incluem:
+
+- **Backlog Refinement:** Um processo contínuo para manter o Product Backlog atualizado, detalhando itens e ajustando suas prioridades.
+- **Burndown Chart:** Uma ferramenta visual para acompanhar o progresso da equipe ao longo da Sprint.
+- **Scrum Board:** Um quadro visual onde as tarefas do Sprint Backlog são organizadas e atualizadas à medida que são concluídas.
+
+**Conclusão**
+O Scrum, com suas práticas e rituais bem definidos, oferece uma estrutura flexível e eficaz para o desenvolvimento de software. Ao compreender e aplicar esses conceitos, a equipe pode melhorar sua comunicação, colaboração e, consequentemente, a qualidade do produto final.
+
+**Próxima Aula**
+Na próxima aula, vamos aprofundar alguns dos artefatos do Scrum e como eles ajudam a manter a transparência e a eficiência no processo de desenvolvimento de software.
+
+*Observação: Insira ilustrações nos locais indicados para melhorar a compreensão dos conceitos abordados.*
+
+**Atividade Avaliativa - Múltipla Escolha**
+
+**Pergunta 1:**
+Qual evento do Scrum é realizado ao início de uma Sprint para definir o que será feito e como será feito durante a Sprint?
+
+a) Daily Scrum.
+
+b) Sprint Planning.
+
+c) Sprint Review.
+
+d) Sprint Retrospective.
+
+**Pergunta 2:**
+Qual é o objetivo do Daily Scrum?
+
+a) Apresentar o incremento ao final da Sprint para partes interessadas.
+
+b) Planejar o trabalho a ser realizado durante a próxima Sprint.
+
+c) Discutir o progresso do dia anterior, o planejamento para o dia e identificar impedimentos.
+
+d) Refletir sobre o trabalho realizado e identificar oportunidades de melhoria.
+
+**Pergunta 3:**
+Qual artefato do Scrum contém todas as tarefas necessárias para entregar os itens selecionados do Product Backlog durante uma Sprint?
+
+a) Sprint Backlog.
+
+b) Product Backlog.
+
+c) Incremento.
+
+d) Scrum Board.
+
+**Pergunta 4:**
+Qual evento do Scrum é usado para refletir sobre o trabalho concluído durante a Sprint e identificar áreas para melhoria?
+
+a) Sprint Retrospective.
+
+b) Sprint Planning.
+
+c) Sprint Review.
+
+d) Daily Scrum.
+
+**Pergunta 5:**
+Qual prática do Scrum é um processo contínuo para manter o Product Backlog atualizado, detalhando itens e ajustando suas prioridades?
+
+a) Backlog Refinement.
+
+b) Burndown Chart.
+
+c) Scrum Board.
+
+d) Sprint Review.
+
+**Respostas:**
+1. b) Sprint Planning.
+2. c) Discutir o progresso do dia anterior, o planejamento para o dia e identificar impedimentos.
+3. a) Sprint Backlog.
+4. a) Sprint Retrospective.
+5. a) Backlog Refinement.
+
+<hr>
+
+**Aula 21: Programação Extrema (eXtreme Programming) - Conceitos**
+
+**Introdução à Programação Extrema**
+A Programação Extrema (eXtreme Programming, ou XP) é uma metodologia ágil centrada no desenvolvimento de software de alta qualidade, com foco em ciclos curtos, feedback contínuo e colaboração intensa entre os membros da equipe. Originada no final da década de 1990, a XP rapidamente ganhou adeptos devido ao seu compromisso com a entrega frequente de software funcional, juntamente com a adoção de práticas robustas para garantir a qualidade do produto. Nesta aula, vamos explorar os conceitos básicos da XP, suas práticas fundamentais e como ela se diferencia de outras metodologias ágeis.
+
+**Ilustração 1:**
+(Inserir um diagrama que mostre o ciclo de vida típico de um projeto XP, destacando a iteração, o feedback e a entrega contínua.)
+
+### Princípios da Programação Extrema
+A XP é guiada por princípios que orientam a equipe a adotar práticas que melhoram a qualidade e a satisfação do cliente. Estes princípios incluem:
+
+- **Comunicação:** A comunicação aberta e frequente entre os membros da equipe e com os stakeholders é vital. Isso garante que todos estejam na mesma página em relação aos requisitos, expectativas e progresso do projeto.
+
+- **Simplicidade:** O desenvolvimento deve ser simples e direto, evitando complexidade desnecessária. A ideia é focar no que é realmente necessário para atender aos requisitos do cliente.
+
+- **Feedback:** O feedback é um elemento essencial para o progresso do projeto. A equipe recebe feedback contínuo do cliente, dos testes e entre si, permitindo ajustes rápidos durante o ciclo de desenvolvimento.
+
+- **Coragem:** A coragem está relacionada à disposição de fazer mudanças necessárias, mesmo que sejam difíceis, e de abordar problemas complexos de frente.
+
+- **Respeito:** Os membros da equipe respeitam uns aos outros e seus conhecimentos, promovendo uma cultura de colaboração e apoio mútuo.
+
+**Ilustração 2:**
+(Inserir uma imagem que represente a colaboração entre membros da equipe, destacando a comunicação e o respeito.)
+
+### Práticas da Programação Extrema
+Para colocar os princípios em prática, a XP adota um conjunto de práticas que têm como objetivo garantir a entrega de software de alta qualidade. Algumas dessas práticas são:
+
+- **Planejamento de Lançamentos:** O planejamento de lançamentos é um processo colaborativo no qual o cliente e a equipe de desenvolvimento definem o que será entregue ao longo do projeto. As iterações são curtas, geralmente entre uma e três semanas, permitindo ajustes rápidos e entrega contínua.
+
+- **Programação em Par:** Na programação em par, dois desenvolvedores trabalham juntos no mesmo computador, compartilhando a responsabilidade pelo código. Essa prática aumenta a qualidade do código e promove o compartilhamento de conhecimento.
+
+- **Integração Contínua:** A integração contínua garante que o código é integrado e testado regularmente. Isso reduz a probabilidade de conflitos e ajuda a identificar problemas mais cedo.
+
+- **Test-Driven Development (TDD):** Na TDD, os desenvolvedores escrevem testes antes do código funcional. Os testes guiam o desenvolvimento e garantem que o código atenda aos requisitos.
+
+- **Refatoração:** A refatoração é o processo de melhorar o código sem alterar sua funcionalidade. Isso é importante para manter a base de código limpa e fácil de manter.
+
+- **Reuniões Diárias:** Semelhante ao Daily Scrum, as reuniões diárias na XP são breves e têm como objetivo sincronizar a equipe e identificar obstáculos.
+
+**Ilustração 3:**
+(Inserir uma imagem que mostre a programação em par, com dois desenvolvedores trabalhando juntos no mesmo computador.)
+
+### Benefícios da Programação Extrema
+A XP oferece diversos benefícios para o desenvolvimento de software, tais como:
+
+- **Entrega Rápida de Software Funcional:** A abordagem iterativa permite entregas rápidas e contínuas, proporcionando valor ao cliente desde o início do projeto.
+
+- **Alta Qualidade do Software:** As práticas de TDD, integração contínua e programação em par contribuem para a alta qualidade do código e do produto final.
+
+- **Flexibilidade para Mudanças:** A comunicação contínua e a entrega frequente facilitam a adaptação a mudanças nos requisitos ou prioridades do cliente.
+
+**Conclusão**
+A Programação Extrema é uma metodologia ágil que promove a colaboração, a simplicidade e a alta qualidade do software. Seus princípios e práticas contribuem para uma cultura de desenvolvimento saudável e focada no cliente. Na próxima aula, vamos explorar mais detalhadamente algumas das práticas da XP e como elas podem ser aplicadas em projetos de software reais.
+
+*Observação: Insira ilustrações nos locais indicados para enriquecer a compreensão dos conceitos abordados.*
+
+Aqui está uma atividade avaliativa de múltipla escolha para a Aula 21: Programação Extrema (eXtreme Programming) - Conceitos.
+
+---
+
+**Atividade Avaliativa - Múltipla Escolha**
+
+**Pergunta 1:**
+Qual dos seguintes é um princípio fundamental da Programação Extrema (XP)?
+
+a) Planejamento detalhado e rígido.
+
+b) Comunicação constante e aberta.
+
+c) Hierarquia rígida na equipe.
+
+d) Desenvolvimento de software em cascata.
+
+**Pergunta 2:**
+Qual prática é característica da Programação Extrema (XP)?
+
+a) Desenvolvimento em cascata.
+
+b) Reuniões semanais de status.
+
+c) Programação em par.
+
+d) Testes ao final do projeto.
+
+**Pergunta 3:**
+O que significa "Test-Driven Development" (TDD), uma prática da XP?
+
+a) Escrever testes antes do código funcional.
+
+b) Criar testes somente após a entrega do software.
+
+c) Testar apenas na etapa de integração.
+
+d) Confiar nos testadores para corrigir erros após o desenvolvimento.
+
+**Pergunta 4:**
+Qual prática da XP é usada para manter o código limpo e de alta qualidade?
+
+a) Refatoração.
+
+b) Revisão trimestral do código.
+
+c) Correção de bugs somente após a entrega.
+
+d) Uso de módulos externos para testes.
+
+**Pergunta 5:**
+Qual é o objetivo da prática de integração contínua na XP?
+
+a) Garantir que o código seja integrado e testado regularmente.
+
+b) Prolongar o tempo entre as integrações para evitar problemas.
+
+c) Integrar somente após uma etapa significativa do projeto.
+
+d) Integrar apenas após a conclusão do produto final.
+
+---
+
+**Gabarito:**
+1. b) Comunicação constante e aberta.
+2. c) Programação em par.
+3. a) Escrever testes antes do código funcional.
+4. a) Refatoração.
+5. a) Garantir que o código seja integrado e testado regularmente.
+
+<hr>
+
+**Aula 22: Programação Extrema (eXtreme Programming) - Práticas**
+
+**Introdução às Práticas da Programação Extrema (XP)**
+A Programação Extrema, ou XP, é uma metodologia ágil que se destaca por suas práticas inovadoras e eficazes para o desenvolvimento de software. Essas práticas visam melhorar a qualidade do software, aumentar a colaboração entre a equipe e garantir uma entrega rápida e contínua. Nesta aula, vamos explorar detalhadamente as práticas mais importantes da XP e discutir como elas contribuem para o sucesso dos projetos.
+
+**Ilustração 1:**
+(Inserir um diagrama que mostre as principais práticas da XP, como Programação em Par, Test-Driven Development, e Integração Contínua.)
+
+### Programação em Par
+A Programação em Par (Pair Programming) é uma prática central na XP, onde dois desenvolvedores trabalham juntos em um único computador. Um deles é o "driver" e escreve o código, enquanto o outro é o "observador" e revisa o código em tempo real. Esta abordagem tem vários benefícios, como:
+
+- **Melhoria na Qualidade do Código:** Com dois desenvolvedores revisando o código simultaneamente, os erros são detectados mais rapidamente, resultando em código mais limpo.
+
+- **Compartilhamento de Conhecimento:** A programação em par promove o compartilhamento de conhecimento entre os membros da equipe, reduzindo a dependência de indivíduos específicos.
+
+- **Maior Criatividade e Solução de Problemas:** A colaboração intensa estimula a troca de ideias e a resolução criativa de problemas.
+
+**Ilustração 2:**
+(Inserir uma imagem de dois desenvolvedores trabalhando juntos no mesmo computador, representando a Programação em Par.)
+
+### Test-Driven Development (TDD)
+O Test-Driven Development (Desenvolvimento Orientado por Testes) é outra prática essencial da XP. Consiste em escrever testes automatizados antes mesmo de escrever o código funcional. Isso inverte o processo tradicional de desenvolvimento, onde os testes são geralmente criados após o código ser escrito. Os benefícios da TDD incluem:
+
+- **Código Mais Seguro:** Como os testes são escritos primeiro, o código é desenvolvido para passar nesses testes, reduzindo a probabilidade de bugs.
+
+- **Feedback Imediato:** Os testes automatizados fornecem feedback rápido sobre o código, permitindo correções imediatas.
+
+- **Facilidade para Refatoração:** Com testes robustos, a refatoração do código é mais segura, pois a base de testes garante que o sistema continue funcionando após alterações.
+
+**Ilustração 3:**
+(Inserir uma imagem que mostre um exemplo de testes automatizados em execução.)
+
+### Integração Contínua
+A Integração Contínua é uma prática que incentiva a integração frequente do código no repositório principal do projeto. Em vez de integrar uma grande quantidade de código no final do projeto, a integração contínua envolve pequenas integrações frequentes, geralmente diárias ou até mesmo várias vezes ao dia. As vantagens desta prática incluem:
+
+- **Menos Conflitos de Código:** Como as integrações são frequentes, a probabilidade de conflitos é menor.
+
+- **Feedback Rápido:** Problemas e conflitos são identificados rapidamente, permitindo correções imediatas.
+
+- **Redução de Riscos:** A integração contínua reduz o risco de grandes problemas no final do projeto, pois os problemas são abordados continuamente.
+
+**Ilustração 4:**
+(Inserir uma imagem que represente um sistema de integração contínua, com fluxos de integração e testes automáticos.)
+
+### Refatoração
+A Refatoração é a prática de melhorar o código existente sem alterar sua funcionalidade. Na XP, a refatoração é incentivada para manter o código limpo e de fácil manutenção. Os benefícios da refatoração incluem:
+
+- **Melhoria na Legibilidade do Código:** A refatoração torna o código mais claro e fácil de entender.
+
+- **Facilidade para Manutenção:** Um código refatorado é mais fácil de manter e atualizar.
+
+- **Redução de Dívida Técnica:** A refatoração regular ajuda a evitar o acúmulo de dívidas técnicas ao longo do tempo.
+
+**Ilustração 5:**
+(Inserir uma imagem que ilustre a refatoração, como um código original e uma versão refatorada.)
+
+### Reuniões Diárias e Planejamento de Itens
+As reuniões diárias, também conhecidas como stand-ups, são uma prática comum na XP, onde a equipe se reúne brevemente para discutir o progresso, identificar impedimentos e planejar as atividades do dia. Além disso, o planejamento de itens ou estórias (user stories) é fundamental para definir o que será feito em cada iteração.
+
+Essas práticas contribuem para uma comunicação eficaz, promovem a colaboração e garantem que a equipe esteja alinhada com os objetivos do projeto.
+
+**Conclusão**
+As práticas da Programação Extrema (XP) são projetadas para melhorar a qualidade do software, aumentar a colaboração e promover a entrega contínua de valor ao cliente. Ao adotar essas práticas, as equipes de desenvolvimento podem criar software de alta qualidade de forma mais eficiente e adaptável.
+
+*Nota: Insira ilustrações nos locais indicados para melhorar a compreensão das práticas da XP.*
+
+Aqui está uma atividade avaliativa de múltipla escolha para a Aula 22: Programação Extrema (eXtreme Programming) - Práticas.
+
+---
+
+**Atividade Avaliativa - Múltipla Escolha**
+
+**Pergunta 1:**
+Qual das seguintes práticas é característica da Programação Extrema (XP)?
+
+a) Test-Driven Development (TDD).
+
+b) Desenvolvimento em cascata.
+
+c) Planejamento extensivo no início do projeto.
+
+d) Codificação sem testes automatizados.
+
+**Pergunta 2:**
+O que significa "Refatoração" na Programação Extrema?
+
+a) Corrigir erros após a entrega do software.
+
+b) Melhorar o código sem alterar sua funcionalidade.
+
+c) Planejar todo o processo de desenvolvimento antes de começar.
+
+d) Integrar código apenas no final do projeto.
+
+**Pergunta 3:**
+Qual é a finalidade da Integração Contínua (Continuous Integration) na XP?
+
+a) Integrar o código com frequência para evitar grandes conflitos.
+
+b) Integrar apenas ao final do projeto para manter a estabilidade.
+
+c) Evitar integração até que o software esteja completo.
+
+d) Fazer integrações semanais para simplificar o processo.
+
+**Pergunta 4:**
+Qual é o propósito da prática de Programação em Par na XP?
+
+a) Dois desenvolvedores trabalham juntos para revisar e escrever código.
+
+b) Um desenvolvedor escreve código e o outro faz testes manuais.
+
+c) Dividir o trabalho para acelerar o desenvolvimento.
+
+d) Dois desenvolvedores escrevem código em computadores separados.
+
+**Pergunta 5:**
+O que é a prática de Reunião Diária (Daily Stand-up) na XP?
+
+a) Uma reunião curta para discutir progresso e identificar impedimentos.
+
+b) Uma reunião para apresentar novos recursos ao cliente.
+
+c) Uma reunião para revisar o código em conjunto.
+
+d) Uma reunião para testar o software no final do dia.
+
+---
+
+**Gabarito:**
+1. a) Test-Driven Development (TDD).
+2. b) Melhorar o código sem alterar sua funcionalidade.
+3. a) Integrar o código com frequência para evitar grandes conflitos.
+4. a) Dois desenvolvedores trabalham juntos para revisar e escrever código.
+5. a) Uma reunião curta para discutir progresso e identificar impedimentos.
