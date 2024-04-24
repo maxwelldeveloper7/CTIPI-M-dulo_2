@@ -134,14 +134,6 @@ Este tutorial apresenta um passo a passo para a instalação e configuração do
 
 ---
 
-Este tutorial deve cobrir a instalação e configuração do PostgreSQL e pgAdmin no Ubuntu 22.04, juntamente com a alteração da senha do usuário "postgres". Se precisar de mais ajuda para outras configurações ou orientações, estou por aqui para ajudar.
-
----
-
-Aqui está uma atividade avaliativa de múltipla escolha para fixar o conhecimento adquirido sobre instalação e configuração do PostgreSQL e pgAdmin no Ubuntu 22.04. 
-
----
-
 ### Questionário de Avaliação: Instalação e Configuração do PostgreSQL e pgAdmin no Ubuntu 22.04
 
 Aluno: ________________________________________________________
