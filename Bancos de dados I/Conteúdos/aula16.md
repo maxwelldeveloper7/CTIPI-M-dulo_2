@@ -29,7 +29,7 @@ Este tutorial apresenta um passo a passo para a instalação e configuração do
 1. **Edite o Arquivo 'pg_hba.conf'**
    Para permitir conexões remotas, é necessário editar o arquivo 'pg_hba.conf':
    ```bash
-   sudo nano /etc/postgresql/14/main/pg_hba.conf
+   sudo mousepad /etc/postgresql/14/main/pg_hba.conf
    ```
 
 2. **Adicione uma Entrada para Acesso Remoto**
@@ -43,7 +43,7 @@ Este tutorial apresenta um passo a passo para a instalação e configuração do
 3. **Edite o Arquivo 'postgresql.conf'**
    Para permitir que o PostgreSQL escute em todos os endereços IP, edite o arquivo 'postgresql.conf':
    ```bash
-   sudo nano /etc/postgresql/14/main/postgresql.conf
+   sudo mousepad /etc/postgresql/14/main/postgresql.conf
    ```
 
    Encontre a linha `#listen_addresses = 'localhost'` e altere para:
