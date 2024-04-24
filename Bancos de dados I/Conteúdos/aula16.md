@@ -84,28 +84,37 @@ Este tutorial apresenta um passo a passo para a instalação e configuração do
 4. **Reinicie o PostgreSQL**
    Reinicie o PostgreSQL para garantir que a alteração seja aplicada corretamente:
    ```bash
-   sudo systemctl restart postgresql
-   ```
+   sudo systemctl restart postgresql  ```
+
+
+
 
 ### Parte 4: Instalação e Configuração do pgAdmin
 
-1. **Adicione o Repositório do pgAdmin**
-   Para instalar o pgAdmin, adicione o repositório oficial ao Ubuntu:
+1. **Adicione a Chave do Repositório do pgAdmin**
+   Antes de adicionar o repositório, obtenha a chave de autenticação:
+   ```bash
+   wget --quiet -O - https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add -
+   ```
+
+2. **Adicione o Repositório do pgAdmin**
+   Após adicionar a chave, adicione o repositório oficial ao Ubuntu:
    ```bash
    sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/jammy pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
    ```
 
-2. **Instale o pgAdmin**
-   Após adicionar o repositório, instale o pgAdmin:
+3. **Instale o pgAdmin**
+   Com o repositório adicionado, instale o pgAdmin:
    ```bash
    sudo apt install pgadmin4
    ```
 
-3. **Inicie o pgAdmin**
+4. **Inicie o pgAdmin**
    Para iniciar o pgAdmin, procure pelo ícone do aplicativo no menu do Ubuntu ou execute o comando a seguir:
    ```bash
    pgadmin4
    ```
+
 
 ### Parte 5: Conexão ao PostgreSQL via pgAdmin
 
