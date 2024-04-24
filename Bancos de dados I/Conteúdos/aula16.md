@@ -83,10 +83,10 @@ Este tutorial apresenta um passo a passo para a instalação e configuração do
 
 4. **Reinicie o PostgreSQL**
    Reinicie o PostgreSQL para garantir que a alteração seja aplicada corretamente:
+
    ```bash
-   sudo systemctl restart postgresql  ```
-
-
+   sudo systemctl restart postgresql
+   ```
 
 
 ### Parte 4: Instalação e Configuração do pgAdmin
