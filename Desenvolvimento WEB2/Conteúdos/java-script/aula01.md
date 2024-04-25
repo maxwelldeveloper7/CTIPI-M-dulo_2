@@ -100,3 +100,65 @@ let resultado = (x > 10 && x < 20);
 // Exibindo o resultado no console
 console.log("A expressão é:", resultado);
 ```
+
+
+## Atividade Avaliativa Complementar: Aula 01 - Fundamentos de JavaScript
+
+### Questão 1: Declaração de Variáveis
+Qual é a diferença principal entre `var`, `let`, e `const` em JavaScript?
+
+a) `var` e `let` são escopos de função, enquanto `const` tem escopo global.
+
+b) `var` é global, `let` é escopo de bloco, e `const` não permite reatribuição após a inicialização.
+
+c) `var` é mais rápido que `let` e `const`.
+
+d) `var` é usado para números, `let` para strings e `const` para booleanos.
+
+
+### Questão 2: Tipos de Dados
+Qual dos seguintes não é um tipo de dado em JavaScript?
+
+a) String
+
+b) Number
+
+c) Boolean
+
+d) Char
+
+
+### Questão 3: Operadores de Comparação
+Qual é a diferença entre os operadores `==` e `===` em JavaScript?
+
+a) `==` compara apenas valores, enquanto `===` compara valores e tipos.
+
+b) `==` compara valores e tipos, enquanto `===` compara apenas valores.
+
+c) `==` é usado para comparação numérica, enquanto `===` é para comparação de strings.
+
+d) Não há diferença, ambos comparam valores e tipos.
+
+
+### Questão 4: Operadores Lógicos
+Qual dos seguintes operadores lógicos representa o operador "E" em JavaScript?
+
+a) `&&`
+
+b) `||`
+
+c) `!`
+
+d) `&`
+
+
+### Questão 5: Arrays
+Qual comando adiciona um elemento ao final de um array em JavaScript?
+
+a) `push()`
+
+b) `pop()`
+
+c) `unshift()`
+
+d) `shift()`
