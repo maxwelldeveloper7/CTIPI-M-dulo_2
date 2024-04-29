@@ -1,4 +1,4 @@
-**Semana 1-2: Fundamentos de JavaScript**
+**Aula 01: Fundamentos de JavaScript**
 
 JavaScript é uma linguagem de programação essencial para o desenvolvimento web. Ela permite que você adicione interatividade e dinamicidade a páginas web. Nesta primeira semana, você aprenderá sobre os fundamentos do JavaScript, incluindo variáveis, tipos de dados e operadores.
 
