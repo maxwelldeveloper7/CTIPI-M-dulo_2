@@ -209,3 +209,88 @@ Nesta atividade, vamos criar uma VPN para conectar duas redes remotas e garantir
 ### Conclusão
 
 Essas atividades práticas proporcionam uma oportunidade valiosa para aplicar conceitos em redes de computadores usando o Packet Tracer. Com essas atividades, os alunos podem ganhar experiência prática em montagem de redes locais, configuração de roteadores e implementação de VPNs. Além disso, essas atividades servem como um bom teste para avaliar a compreensão dos conceitos e a capacidade de resolução de problemas em ambientes simulados.
+
+**Atividade Avaliativa sobre Atividades Práticas dos Módulos 17 e 18**
+
+*Instruções: Responda às seguintes questões de múltipla escolha, selecionando a resposta correta dentre as quatro alternativas apresentadas.*
+
+### Questão 1
+Durante a montagem de uma rede local (LAN), qual das opções a seguir representa a sequência correta para estabelecer uma conexão entre um roteador, um switch e três computadores?
+
+a. Conectar o roteador ao switch com um cabo Ethernet e os computadores ao switch.
+
+b. Conectar todos os dispositivos diretamente ao roteador.
+
+c. Conectar todos os dispositivos diretamente ao switch sem o roteador.
+
+d. Conectar os computadores diretamente ao roteador e usar um cabo USB para conectar o switch.
+
+**Resposta correta:** a
+
+### Questão 2
+Na configuração de uma rede local, o que deve ser feito para garantir a comunicação entre computadores conectados ao mesmo switch?
+
+a. Atribuir endereços IP dentro da mesma faixa e usar a mesma máscara de sub-rede.
+
+b. Conectar todos os dispositivos usando cabos cruzados (cross-over).
+
+c. Definir diferentes gateways padrão para cada computador.
+
+d. Desligar e ligar o switch para sincronizar a rede.
+
+**Resposta correta:** a
+
+### Questão 3
+Em um cenário de roteamento entre duas sub-redes, qual é a função do roteador?
+
+a. Conectar diferentes dispositivos em uma única rede.
+
+b. Encaminhar pacotes entre sub-redes diferentes.
+
+c. Estabelecer a conexão entre computadores e a Internet.
+
+d. Configurar os endereços IP automaticamente.
+
+**Resposta correta:** b
+
+### Questão 4
+Qual é a finalidade da configuração de uma VPN (Virtual Private Network) entre duas redes?
+
+a. Estabelecer uma conexão segura entre duas redes remotas.
+
+b. Fornecer acesso público a uma rede privada.
+
+c. Reduzir a necessidade de criptografia.
+
+d. Permitir a conexão de dispositivos móveis sem fios.
+
+**Resposta correta:** a
+
+### Questão 5
+Qual é uma abordagem eficaz para testar a conectividade em uma rede simulada no Packet Tracer?
+
+a. Usar o comando `ping` para verificar a conectividade entre dispositivos.
+
+b. Desligar e ligar os computadores várias vezes.
+
+c. Trocar os cabos Ethernet por cabos USB.
+
+d. Conectar os computadores diretamente ao roteador.
+
+**Resposta correta:** a
+
+### Questão 6
+Qual é um passo importante ao configurar endereços IP para dispositivos em uma rede local?
+
+a. Atribuir endereços IP únicos e definir uma máscara de sub-rede apropriada.
+
+b. Usar o mesmo endereço IP para todos os dispositivos para evitar conflitos.
+
+c. Usar endereços IP fora da faixa padrão para garantir segurança.
+
+d. Desligar a Internet durante a configuração.
+
+**Resposta correta:** a
+
+### Conclusão
+Estas questões de múltipla escolha avaliam o conhecimento dos alunos sobre as atividades práticas realizadas nos Módulos 17 e 18, abordando tópicos como configuração de redes locais, roteamento entre sub-redes e implementação de VPNs. Certifique-se de revisar o material das atividades para uma melhor compreensão. Boa sorte!
