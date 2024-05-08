@@ -136,3 +136,132 @@ session.close()
 
 ## Conclusão
 Você criou um sistema básico de inscrições para creches usando SQLAlchemy e SQLite. Agora, é possível adicionar mais funcionalidades, como relações entre tabelas, validação de dados, e interações mais complexas. Siga estas etapas para aprender a trabalhar com bancos de dados em Python e SQLAlchemy.
+
+Uma atividade avaliativa de múltipla escolha pode ajudar a testar a compreensão dos alunos sobre o uso de SQLAlchemy e SQLite para criar e manipular um banco de dados. Vamos criar uma série de questões com suas respectivas respostas para essa atividade.
+
+---
+
+## Atividade Avaliativa: Questões de Múltipla Escolha sobre SQLAlchemy e SQLite
+
+### Questão 1
+Qual é a principal função do SQLAlchemy em um projeto Python?
+
+A) Criar interfaces gráficas para aplicativos Python  
+B) Realizar operações de banco de dados relacionais em Python  
+C) Criar websites interativos em Python  
+D) Realizar operações matemáticas avançadas em Python  
+
+**Resposta:** B) Realizar operações de banco de dados relacionais em Python
+
+---
+
+### Questão 2
+Qual dos seguintes comandos é usado para criar um banco de dados SQLite ou conectar a um banco existente?
+
+A) `create_engine`  
+B) `create_database`  
+C) `connect_database`  
+D) `init_engine`  
+
+**Resposta:** A) `create_engine`
+
+---
+
+### Questão 3
+Na atividade prática, qual foi o propósito do `Session` em SQLAlchemy?
+
+A) Para armazenar as configurações do banco de dados  
+B) Para iniciar uma conexão com o banco de dados  
+C) Para executar comandos SQL no banco de dados  
+D) Para gerenciar as transações com o banco de dados  
+
+**Resposta:** D) Para gerenciar as transações com o banco de dados
+
+---
+
+### Questão 4
+Ao definir uma tabela em SQLAlchemy, qual destes atributos marca a chave primária da tabela?
+
+A) `Column(String)`  
+B) `Column(Integer, unique=True)`  
+C) `Column(Integer, primary_key=True)`  
+D) `Column(Integer, nullable=False)`  
+
+**Resposta:** C) `Column(Integer, primary_key=True)`
+
+---
+
+### Questão 5
+Para criar um relacionamento entre duas tabelas em SQLAlchemy, que atributo é necessário em uma tabela para referenciar a chave primária da outra tabela?
+
+A) `ForeignKey`  
+B) `ReferenceKey`  
+C) `BackReference`  
+D) `ExternalKey`  
+
+**Resposta:** A) `ForeignKey`
+
+---
+
+### Questão 6
+Qual é o método necessário para aplicar alterações no banco de dados após adicionar, atualizar ou excluir registros?
+
+A) `save`  
+B) `commit`  
+C) `confirm`  
+D) `close`  
+
+**Resposta:** B) `commit`
+
+---
+
+### Questão 7
+Na atividade prática, qual das operações a seguir foi utilizada para adicionar registros ao banco de dados?
+
+A) `session.add()`  
+B) `session.insert()`  
+C) `session.put()`  
+D) `session.append()`  
+
+**Resposta:** A) `session.add()`
+
+---
+
+### Questão 8
+Qual dos comandos a seguir é usado para remover um registro do banco de dados em SQLAlchemy?
+
+A) `session.delete()`  
+B) `session.remove()`  
+C) `session.purge()`  
+D) `session.clear()`  
+
+**Resposta:** A) `session.delete()`
+
+---
+
+### Questão 9
+Para fechar uma sessão após todas as operações, qual é o comando apropriado?
+
+A) `session.close()`  
+B) `session.end()`  
+C) `session.quit()`  
+D) `session.stop()`  
+
+**Resposta:** A) `session.close()`
+
+---
+
+### Questão 10
+Quando as tabelas são definidas no código usando SQLAlchemy, qual comando é usado para criá-las no banco de dados?
+
+A) `Base.metadata.create_all()`  
+B) `Base.metadata.make()`  
+C) `Base.create_tables()`  
+D) `Base.build()`  
+
+**Resposta:** A) `Base.metadata.create_all()`
+
+---
+
+## Conclusão
+Estas questões de múltipla escolha cobrem conceitos-chave do uso de SQLAlchemy e SQLite para operações básicas de banco de dados. A atividade avalia a compreensão dos alunos sobre a teoria e a prática de trabalhar com bancos de dados em Python.
