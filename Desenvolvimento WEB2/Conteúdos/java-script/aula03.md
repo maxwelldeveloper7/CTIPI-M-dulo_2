@@ -202,3 +202,72 @@ esperarTresSegundos()
 Nesta solução, a função `esperarTresSegundos` retorna uma promise que é resolvida após um tempo de espera de 3 segundos. A promise usa `setTimeout` para simular uma operação assíncrona. Quando a promise é resolvida, ela retorna uma mensagem, e o método `then` lida com a resolução.
 
 Estas soluções demonstram a implementação de funções avançadas, closures, callbacks e promises em JavaScript. Cada exercício fornece um exemplo prático para consolidar o entendimento dos alunos sobre esses conceitos.
+
+---
+
+
+## Atividade Complementar: Aula 03 - Funções Avançadas em JavaScript
+
+### Questão 1: O que é um Closure em JavaScript?
+a) Uma função que se fecha automaticamente após ser chamada.  
+b) Uma função que se lembra do escopo em que foi criada, mesmo quando executada em outro contexto.  
+c) Um método especial para encerrar a execução de um programa.  
+d) Uma função que só pode ser chamada uma vez.
+
+---
+
+### Questão 2: O que é um Callback em JavaScript?
+a) Uma função passada como argumento para outra função, que pode ser chamada durante a execução.  
+b) Um mecanismo para chamar uma função de forma assíncrona.  
+c) Um bloco de código que encerra a execução de uma função.  
+d) Um recurso para retornar ao início de um bloco de código.
+
+---
+
+### Questão 3: O que é uma Promise em JavaScript?
+a) Uma função que sempre retorna um valor verdadeiro ou falso.  
+b) Uma função que aceita um callback como argumento.  
+c) Um objeto que representa a eventual conclusão ou falha de uma operação assíncrona.  
+d) Uma função que retorna um valor indefinido até ser chamada novamente.
+
+---
+
+### Questão 4: Como um `then` é usado com uma Promise em JavaScript?
+a) Para adicionar um callback que é executado quando a promise é resolvida.  
+b) Para reiniciar uma operação assíncrona.  
+c) Para interromper uma operação assíncrona.  
+d) Para definir um bloco de código a ser executado após a promise ser rejeitada.
+
+---
+
+### Questão 5: Qual é o resultado do seguinte código JavaScript?
+
+```javascript
+function criarContador() {
+    let contagem = 0;
+    return function () {
+        contagem++;
+        console.log("Contagem:", contagem);
+    };
+}
+
+const contador = criarContador();
+contador();
+contador();
+```
+
+a) "Contagem: 1", "Contagem: 2"  
+b) "Contagem: 1", "Contagem: 1"  
+c) "Contagem: 0", "Contagem: 1"  
+d) "Contagem: 2", "Contagem: 3"  
+
+---
+
+Estas questões abordam conceitos de funções avançadas em JavaScript, como closures, callbacks, e promises. O objetivo é avaliar a compreensão do aluno sobre como esses conceitos funcionam e como são aplicados no desenvolvimento de software em JavaScript.
+
+**Respostas esperadas:**
+1. b) Uma função que se lembra do escopo em que foi criada, mesmo quando executada em outro contexto.
+2. a) Uma função passada como argumento para outra função, que pode ser chamada durante a execução.
+3. c) Um objeto que representa a eventual conclusão ou falha de uma operação assíncrona.
+4. a) Para adicionar um callback que é executado quando a promise é resolvida.
+5. a) "Contagem: 1", "Contagem: 2".
