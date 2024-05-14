@@ -19,6 +19,60 @@ Seu objetivo é propor uma solução para esse problema usando princípios de en
 
 ---
 
+**Modelo de Documentação de Requisitos**
+
+**Projeto:** Digitalização de Arquivos Escolares
+
+**Objetivo:**
+O objetivo deste projeto é implementar uma solução de digitalização e gerenciamento de documentos escolares para a escola, visando melhorar a eficiência, acessibilidade e segurança dos registros dos alunos.
+
+**1. Introdução:**
+O sistema de digitalização de arquivos escolares foi desenvolvido para resolver o problema enfrentado pela escola com o gerenciamento de documentos antigos dos alunos. Atualmente, os registros em papel estão armazenados em um arquivo físico, tornando difícil e demorada a busca e recuperação de informações relevantes.
+
+**2. Requisitos Funcionais:**
+- RF1: Digitalização de Documentos
+  - O sistema deve permitir a digitalização de documentos em formato físico para formato digital (PDF).
+- RF2: Estruturação da Base de Dados
+  - Os documentos digitalizados devem ser organizados em uma estrutura de pastas e nomeados de forma crescente.
+- RF3: Sistema de Busca e Recuperação
+  - O sistema deve disponibilizar uma interface web para buscar e recuperar documentos de forma rápida e eficiente.
+- RF4: Segurança e Backup
+  - O sistema deve incluir uma tela de login para proteger o acesso aos documentos e realizar backup dos arquivos em um HD externo semanalmente.
+
+**3. Requisitos Não Funcionais:**
+- RNF1: Usabilidade
+  - O sistema deve ser fácil de usar e intuitivo para os usuários finais.
+- RNF2: Desempenho
+  - O sistema deve ter um tempo de resposta rápido durante as operações de busca e recuperação de documentos.
+- RNF3: Segurança
+  - O sistema deve garantir a segurança e integridade dos dados, incluindo medidas de proteção contra acessos não autorizados.
+- RNF4: Confiabilidade
+  - O sistema deve ser confiável e garantir a disponibilidade dos documentos sempre que necessário.
+
+**4. Interfaces do Sistema:**
+- Interface de Digitalização: Permite aos usuários digitalizarem os documentos físicos.
+- Interface Web de Busca: Permite aos usuários buscar e recuperar documentos digitalizados.
+- Tela de Login: Requer autenticação para acessar o sistema.
+
+**5. Restrições:**
+- O sistema deve ser compatível com os dispositivos existentes na escola.
+- O projeto deve ser concluído dentro do prazo estabelecido e do orçamento alocado.
+
+**6. Glossário:**
+- PDF: Portable Document Format
+- HD: Hard Disk
+
+**7. Referências:**
+- Documentação técnica das ferramentas e tecnologias utilizadas no desenvolvimento do sistema.
+
+**8. Histórico de Revisões:**
+- Versão 1.0: [Data] - Primeira versão do documento.
+- Versão 1.1: [Data] - Inclusão de requisitos adicionais após revisão.
+
+Este modelo de documentação de requisitos serve como base para o desenvolvimento do sistema de digitalização de arquivos escolares, fornecendo uma visão abrangente dos requisitos funcionais e não funcionais, interfaces do sistema, restrições e referências necessárias para o projeto.
+
+---
+
 ### Estudo de Caso: Sistema Online para Cadastro em Creches
 
 **Contexto:**
