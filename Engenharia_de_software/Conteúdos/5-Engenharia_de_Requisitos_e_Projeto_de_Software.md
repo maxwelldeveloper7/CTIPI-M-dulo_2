@@ -112,34 +112,112 @@ d) Todas as opções acima.
 **Introdução:**
 Na Engenharia de Software, o processo de Engenharia de Requisitos é fundamental para o sucesso de um projeto. Ele define como os requisitos do sistema serão identificados, analisados, documentados e validados ao longo do ciclo de vida do desenvolvimento de software. Nesta aula, exploraremos detalhadamente o processo de Engenharia de Requisitos e suas principais etapas.
 
-**Ilustração 1 (Prompt para geração):**
-Crie uma ilustração que represente o ciclo de vida do processo de Engenharia de Requisitos, destacando as diferentes fases, como identificação, análise, documentação e validação de requisitos.
+<!-- **Ilustração 1 (Prompt para geração):**
+Crie uma ilustração que represente o ciclo de vida do processo de Engenharia de Requisitos, destacando as diferentes fases, como identificação, análise, documentação e validação de requisitos. -->
+
+![](../assets/27/1.jpg)
 
 #### Etapas do Processo de Engenharia de Requisitos
 
 **1. Identificação de Requisitos:**
 A primeira etapa do processo é identificar os requisitos do sistema. Isso envolve a colaboração com os stakeholders para entender suas necessidades e expectativas em relação ao produto a ser desenvolvido.
 
-**Ilustração 2 (Prompt para geração):**
-Crie uma ilustração que represente o processo de identificação de requisitos, mostrando a interação entre os membros da equipe de desenvolvimento e os stakeholders.
+<!-- **Ilustração 2 (Prompt para geração):**
+Crie uma ilustração que represente o processo de identificação de requisitos, mostrando a interação entre os membros da equipe de desenvolvimento e os stakeholders. -->
+
+![](../assets/27/2.jpg)
 
 **2. Análise de Requisitos:**
 Após a identificação, os requisitos são analisados em detalhes para entender completamente seu escopo e impacto no sistema. Esta etapa visa garantir que os requisitos sejam claros, completos e consistentes.
 
-**Ilustração 3 (Prompt para geração):**
-Crie uma ilustração que represente o processo de análise de requisitos, mostrando a equipe revisando e refinando os requisitos identificados.
+<!-- **Ilustração 3 (Prompt para geração):**
+Crie uma ilustração que represente o processo de análise de requisitos, mostrando a equipe revisando e refinando os requisitos identificados. -->
+
+![](../assets/27/3.jpg)
 
 **3. Documentação de Requisitos:**
 Os requisitos são então documentados de forma clara e compreensível para todas as partes interessadas. Isso pode incluir a criação de especificações de requisitos, diagramas de casos de uso e protótipos de interface do usuário.
 
-**Ilustração 4 (Prompt para geração):**
-Crie uma ilustração que represente o processo de documentação de requisitos, mostrando a criação de documentos e diagramas para comunicar os requisitos.
+<!-- **Ilustração 4 (Prompt para geração):**
+Crie uma ilustração que represente o processo de documentação de requisitos, mostrando a criação de documentos e diagramas para comunicar os requisitos. -->
+
+![](../assets/27/4.jpg)
 
 **4. Validação de Requisitos:**
 A última etapa do processo é validar os requisitos com os stakeholders para garantir que eles atendam às necessidades e expectativas do cliente. Isso pode envolver revisões formais, prototipagem e simulações.
 
-**Ilustração 5 (Prompt para geração):**
-Crie uma ilustração que represente o processo de validação de requisitos, mostrando a equipe apresentando os requisitos aos stakeholders para revisão e feedback.
+<!-- **Ilustração 5 (Prompt para geração):**
+Crie uma ilustração que represente o processo de validação de requisitos, mostrando a equipe apresentando os requisitos aos stakeholders para revisão e feedback. -->
+
+![](../assets/27/5.jpg)
 
 #### Conclusão
 O processo de Engenharia de Requisitos é essencial para o desenvolvimento de software de alta qualidade que atenda às necessidades dos usuários finais. Ao seguir um processo bem definido e colaborativo, as equipes de desenvolvimento podem garantir o sucesso do projeto desde o início.
+
+Aqui está uma atividade avaliativa de múltipla escolha para a Aula 27: Processo de Engenharia de Requisitos.
+
+---
+
+**Atividade Avaliativa**
+
+**Aluno: ____________________________________________________________**
+
+1: Qual é a primeira etapa do processo de Engenharia de Requisitos?
+
+a) Análise de Requisitos.
+
+b) Documentação de Requisitos.
+
+c) Validação de Requisitos.
+
+d) Identificação de Requisitos.
+
+2: O que envolve a análise de requisitos?
+
+a) Revisão formal dos requisitos com os stakeholders.
+
+b) Refinamento e compreensão detalhada dos requisitos.
+
+c) Criação de documentos claros e compreensíveis.
+
+d) Testes de validação dos requisitos.
+
+3: Qual é o objetivo da documentação de requisitos?
+
+a) Validar os requisitos com os stakeholders.
+
+b) Garantir que os requisitos sejam claros, completos e não ambíguos.
+
+c) Revisar formalmente os requisitos.
+
+d) Criar um protótipo do sistema.
+
+4: O que envolve a validação de requisitos?
+
+a) Revisão formal dos requisitos com os stakeholders.
+
+b) Refinamento e compreensão detalhada dos requisitos.
+
+c) Criação de documentos claros e compreensíveis.
+
+d) Testes de validação dos requisitos.
+
+5: Qual é a importância do processo de Engenharia de Requisitos?
+
+a) Definir os requisitos de forma rígida para evitar mudanças.
+
+b) Garantir que o sistema atenda às necessidades e expectativas dos stakeholders.
+
+c) Criar uma documentação extensa e detalhada.
+
+d) Acelerar o processo de desenvolvimento de software.
+
+---
+
+**Gabarito:**
+1. d) Identificação de Requisitos.
+2. b) Refinamento e compreensão detalhada dos requisitos.
+3. b) Garantir que os requisitos sejam claros, completos e não ambíguos.
+4. a) Revisão formal dos requisitos com os stakeholders.
+5. b) Garantir que o sistema atenda às necessidades e expectativas dos stakeholders.
+
