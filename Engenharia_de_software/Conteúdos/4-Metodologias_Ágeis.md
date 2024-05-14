@@ -1041,3 +1041,53 @@ d) Uso de equipes separadas para planejamento e desenvolvimento.
 3. a) Permite maior flexibilidade para adaptação às necessidades exclusivas do cliente.
 4. b) Foco na entrega contínua de versões funcionais.
 5. b) Feedback contínuo para manter o projeto no caminho certo.
+
+**Aula 25: Revisão e Atividades Práticas**
+
+**Introdução:**
+Nesta aula, faremos uma revisão abrangente dos conceitos e práticas abordados até agora no curso de Engenharia de Software. Além disso, teremos atividades práticas para reforçar o aprendizado e aplicar os conhecimentos adquiridos. Esta é uma oportunidade para consolidar tudo o que foi aprendido e preparar-se para os próximos desafios.
+
+**Ilustração 1 (Prompt para geração):**
+Crie uma ilustração que represente um estudante revisando notas de aula e conceitos em um ambiente de estudo agradável e inspirador.
+
+### Revisão dos Conceitos-Chave
+Vamos revisar os principais conceitos e tópicos discutidos ao longo do curso, incluindo:
+
+- Definições, princípios e fundamentos da Engenharia de Software.
+- Modelos de processo de software.
+- Diagramas UML e sua aplicação.
+- Metodologias Ágeis e seus princípios.
+- Práticas de Engenharia de Software, como comunicação, planejamento e construção.
+- Ferramentas e técnicas para o desenvolvimento de software.
+
+Esta revisão ajudará a reforçar o entendimento dos alunos sobre os fundamentos da Engenharia de Software e sua aplicação prática.
+
+**Ilustração 2 (Prompt para geração):**
+Crie um diagrama que represente os principais conceitos e tópicos discutidos ao longo do curso, organizados de forma clara e visualmente atrativa.
+
+### Atividades Práticas
+Durante esta aula, os alunos terão a oportunidade de participar de atividades práticas para aplicar os conceitos aprendidos. Isso pode incluir:
+
+- Resolução de problemas relacionados a casos de uso e modelagem de processos.
+- Criação de diagramas UML para representar diferentes aspectos de um projeto de software.
+- Simulações de reuniões ágeis, como Sprint Planning ou Daily Scrum.
+- Análise de estudos de caso e discussão em grupo sobre as melhores práticas de Engenharia de Software.
+
+Estas atividades práticas visam fortalecer as habilidades dos alunos na aplicação dos conceitos teóricos em situações do mundo real.
+
+**Ilustração 3 (Prompt para geração):**
+Crie uma série de ilustrações que representem diferentes atividades práticas realizadas durante a aula, como resolução de problemas, criação de diagramas e simulações de reuniões ágeis.
+
+### Reflexão e Discussão
+Ao final da aula, será reservado um tempo para reflexão e discussão sobre o que foi aprendido e como os conceitos podem ser aplicados em situações práticas. Os alunos serão encorajados a compartilhar suas experiências e insights, promovendo a colaboração e o aprendizado mútuo.
+
+**Ilustração 4 (Prompt para geração):**
+Crie uma ilustração que represente um grupo de alunos discutindo e refletindo sobre os conceitos aprendidos durante a aula, em um ambiente de aprendizado colaborativo e inspirador.
+
+### Conclusão
+A revisão abrangente e as atividades práticas desta aula proporcionarão uma oportunidade valiosa para consolidar o conhecimento e fortalecer as habilidades dos alunos em Engenharia de Software. Este é um passo importante no caminho para se tornar profissionais competentes e bem-sucedidos nesta área dinâmica e em constante evolução.
+
+**Próxima Aula**
+Na próxima aula, vamos avançar para tópicos mais avançados em Engenharia de Software, explorando novas metodologias, ferramentas e práticas emergentes. Estejam preparados para continuar sua jornada de aprendizado e crescimento profissional.
+
+*Observação: Insira ilustrações nos locais indicados para enriquecer a experiência visual dos alunos durante a revisão e atividades práticas.*
