@@ -221,3 +221,140 @@ d) Acelerar o processo de desenvolvimento de software.
 4. a) Revisão formal dos requisitos com os stakeholders.
 5. b) Garantir que o sistema atenda às necessidades e expectativas dos stakeholders.
 
+## Aula 28: Documentação de Requisitos
+
+**Introdução:**
+A documentação de requisitos desempenha um papel crucial no desenvolvimento de software, fornecendo uma base sólida para o projeto e implementação do sistema. Nesta aula, exploraremos a importância da documentação de requisitos, os tipos de documentos envolvidos e as melhores práticas para sua criação.
+
+<!-- **Ilustração 1 (Prompt para geração):**
+Crie uma ilustração que represente um conjunto de documentos de requisitos, como especificações, diagramas e protótipos, formando a base para o desenvolvimento de um sistema de software. -->
+
+![](../assets/28/1.jpg)
+
+#### Importância da Documentação de Requisitos
+
+A documentação de requisitos é essencial por várias razões:
+
+**1. Comunicação Efetiva:**
+Documentos claros e precisos facilitam a comunicação entre os membros da equipe de desenvolvimento, stakeholders e clientes. Isso garante que todos tenham uma compreensão comum dos requisitos do sistema.
+
+<!-- **Ilustração 2 (Prompt para geração):**
+Crie uma ilustração que represente a comunicação efetiva facilitada pela documentação de requisitos, mostrando diferentes partes interessadas discutindo os requisitos em um ambiente colaborativo. -->
+
+![](../assets/28/2.jpg)
+
+**2. Base para o Desenvolvimento:**
+A documentação de requisitos serve como base para o desenvolvimento do sistema, orientando os desenvolvedores sobre o que precisa ser construído e como deve funcionar.
+
+<!-- **Ilustração 3 (Prompt para geração):**
+Crie uma ilustração que represente a documentação de requisitos como a base sólida sobre a qual o sistema de software é construído, mostrando desenvolvedores consultando documentos durante o processo de codificação. -->
+
+![](../assets/28/3.jpg)
+
+**3. Gerenciamento de Mudanças:**
+Documentos bem elaborados facilitam o gerenciamento de mudanças ao longo do ciclo de vida do projeto, permitindo que as alterações nos requisitos sejam documentadas, avaliadas e implementadas de forma controlada.
+
+<!-- **Ilustração 4 (Prompt para geração):**
+Crie uma ilustração que represente o processo de gerenciamento de mudanças facilitado pela documentação de requisitos, mostrando uma equipe revisando e atualizando documentos para refletir alterações nos requisitos. -->
+
+![](../assets/28/4.jpg)
+
+#### Tipos de Documentos de Requisitos
+
+Os documentos de requisitos podem incluir:
+
+- Especificações de Requisitos.
+- Diagramas de Casos de Uso.
+- Protótipos de Interface do Usuário.
+- Matrizes de Rastreabilidade de Requisitos.
+- Documentos de Revisão e Aprovação.
+
+<!-- **Ilustração 5 (Prompt para geração):**
+Crie uma ilustração que represente os diferentes tipos de documentos de requisitos, mostrando exemplos de cada um e sua aplicação no processo de desenvolvimento de software. -->
+
+![](../assets/28/5.jpg)
+
+#### Melhores Práticas de Documentação
+
+Algumas melhores práticas para a criação de documentação de requisitos incluem:
+
+- Manter a documentação clara, concisa e não ambígua.
+- Usar linguagem simples e evitar jargões técnicos desnecessários.
+- Incluir exemplos e cenários de uso para ilustrar os requisitos.
+- Atualizar regularmente os documentos para refletir mudanças nos requisitos.
+
+<!-- **Ilustração 6 (Prompt para geração):**
+Crie uma ilustração que represente as melhores práticas de documentação de requisitos, mostrando uma equipe trabalhando em conjunto para criar documentos claros e concisos. -->
+
+![](../assets/28/6.jpg)
+
+#### Conclusão
+
+A documentação de requisitos desempenha um papel vital no sucesso de um projeto de software, fornecendo uma base sólida para o desenvolvimento e garantindo uma compreensão comum entre todas as partes interessadas. Ao seguir as melhores práticas e manter uma documentação clara e atualizada, as equipes de desenvolvimento podem minimizar erros e maximizar o sucesso do projeto.
+
+Aqui está uma atividade avaliativa de múltipla escolha para a Aula 28: Documentação de Requisitos.
+
+---
+
+**Atividade Avaliativa**
+
+**Aluno:__________________________________________________________**
+
+1: Qual é uma das principais razões para a importância da documentação de requisitos?
+
+a) Facilitar o desenvolvimento de software apenas para os desenvolvedores.
+
+b) Fornecer uma base sólida para o desenvolvimento do sistema.
+
+c) Substituir a comunicação direta entre os membros da equipe.
+
+d) Reduzir a necessidade de gerenciamento de mudanças.
+
+2: O que facilita a documentação de requisitos?
+
+a) Linguagem técnica complexa.
+
+b) Especificações ambíguas e vagas.
+
+c) Exemplos e cenários de uso claros.
+
+d) Manutenção de documentação desatualizada.
+
+3: Quais tipos de documentos podem fazer parte da documentação de requisitos?
+
+a) Apenas diagramas de classe.
+
+b) Apenas protótipos de interface do usuário.
+
+c) Especificações de requisitos, diagramas de casos de uso, protótipos de interface do usuário, entre outros.
+
+d) Apenas documentos de revisão e aprovação.
+
+4: Qual é uma das melhores práticas para a documentação de requisitos?
+
+a) Manter a documentação complexa e repleta de jargões técnicos.
+
+b) Incluir exemplos e cenários de uso para ilustrar os requisitos.
+
+c) Atualizar os documentos apenas no final do projeto.
+
+d) Evitar a comunicação com os stakeholders durante o processo de documentação.
+
+5: Por que a documentação de requisitos facilita o gerenciamento de mudanças?
+
+a) Porque torna as mudanças desnecessárias.
+
+b) Porque permite que as mudanças sejam documentadas, avaliadas e implementadas de forma controlada.
+
+c) Porque torna o processo de mudança mais complicado.
+
+d) Porque evita completamente a necessidade de mudanças.
+
+---
+
+**Gabarito:**
+1. b) Fornecer uma base sólida para o desenvolvimento do sistema.
+2. c) Exemplos e cenários de uso claros.
+3. c) Especificações de requisitos, diagramas de casos de uso, protótipos de interface do usuário, entre outros.
+4. b) Incluir exemplos e cenários de uso para ilustrar os requisitos.
+5. b) Porque permite que as mudanças sejam documentadas, avaliadas e implementadas de forma controlada.
