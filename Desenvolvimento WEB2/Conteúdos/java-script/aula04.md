@@ -2,6 +2,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
 </head>
 <div style="font-family: 'Comic Neue';">
+
 ### Semana 4: Manipulação do DOM e Eventos em JavaScript
 
 Durante esta semana, exploraremos a manipulação do Document Object Model (DOM) e a interação com eventos em JavaScript. O DOM é uma representação hierárquica de todos os elementos de uma página web, e aprender a manipulá-lo é essencial para criar páginas interativas e dinâmicas. Vamos aprender como acessar elementos HTML, modificar seu conteúdo e estilo, e responder a eventos do usuário.
