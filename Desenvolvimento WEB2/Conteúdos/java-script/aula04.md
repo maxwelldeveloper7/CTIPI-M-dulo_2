@@ -153,3 +153,57 @@ entrada.addEventListener("keyup", function(event) {
     }
 });
 ```
+Aqui está uma atividade avaliativa com questões de múltipla escolha de 4 alternativas sobre a aula "Semana 7-8: Manipulação do DOM e Eventos em JavaScript":
+
+---
+
+### Atividade Complementar: Aula 04 - Manipulação do DOM e Eventos em JavaScript
+
+#### Questão 1: O que é o DOM em JavaScript?
+a) Um servidor de banco de dados.  
+b) Uma linguagem de programação.  
+c) Uma representação hierárquica dos elementos de uma página web.  
+d) Um editor de texto.
+
+
+
+#### Questão 2: Qual método JavaScript é usado para adicionar um evento a um elemento HTML?
+a) `addEventListener()`  
+b) `appendChild()`  
+c) `getElementById()`  
+d) `createElement()`
+
+
+
+#### Questão 3: Qual função JavaScript é usada para acessar um elemento HTML pelo seu ID?
+a) `getElementByTag()`  
+b) `querySelector()`  
+c) `getElementById()`  
+d) `querySelectorAll()`
+
+
+
+#### Questão 4: Como você adicionaria um novo elemento `<p>` ao final do corpo de um documento HTML usando JavaScript?
+a) `createElement("p")`  
+b) `createElement("<p>")`  
+c) `document.createElement("p")`  
+d) `document.create("<p>")`
+
+
+
+#### Questão 5: Qual evento JavaScript é acionado quando um usuário clica em um elemento HTML?
+a) `mouseenter`  
+b) `keydown`  
+c) `click`  
+d) `submit`
+
+---
+
+Estas questões abordam conceitos fundamentais sobre manipulação do DOM e eventos em JavaScript. O objetivo é avaliar a compreensão dos alunos sobre como acessar elementos HTML, manipular o DOM e responder a eventos do usuário em páginas web.
+
+**Respostas esperadas:**
+1. c) Uma representação hierárquica dos elementos de uma página web.
+2. a) `addEventListener()`
+3. c) `getElementById()`
+4. c) `document.createElement("p")`
+5. c) `click`
