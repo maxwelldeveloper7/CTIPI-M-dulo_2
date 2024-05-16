@@ -212,4 +212,4 @@ Estas questões abordam conceitos fundamentais sobre manipulação do DOM e even
 3. c) `getElementById()`
 4. c) `document.createElement("p")`
 5. c) `click`
-</dib>
+</div>
