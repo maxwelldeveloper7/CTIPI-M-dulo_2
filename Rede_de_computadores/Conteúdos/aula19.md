@@ -81,3 +81,89 @@ Além do 6G, outras tecnologias emergentes, como a computação quântica e a co
 As tendências em redes de computadores estão moldando o futuro da conectividade, trazendo avanços significativos em termos de velocidade, capacidade, flexibilidade e segurança. Desde a expansão das redes móveis de próxima geração até a implementação de redes autônomas e a exploração de novas tecnologias, o campo das redes está evoluindo rapidamente para atender às demandas crescentes de usuários e empresas. Manter-se atualizado com essas tendências é crucial para profissionais de TI e redes que buscam aproveitar ao máximo as oportunidades oferecidas por essas inovações.
 
 *Ilustração sugerida: Cronograma ou linha do tempo das principais inovações e tendências em redes de computadores, destacando marcos importantes e previsões futuras.*
+
+### Atividade Avaliativa
+
+#### Aluno: ___________________________________________________
+
+1. **Qual das seguintes afirmações melhor descreve uma das vantagens do 5G em comparação com as gerações anteriores de redes móveis?**
+   - a) Menor capacidade de banda larga.
+   - b) Maior latência.
+   - c) Maior largura de banda e menores latências.
+   - d) Uso exclusivo para comunicações de voz.
+
+   **Resposta correta: c) Maior largura de banda e menores latências.**
+
+2. **A fibra óptica é preferida em muitas redes modernas por quê?**
+   - a) Porque é mais barata que o cabeamento coaxial.
+   - b) Porque oferece maior largura de banda e menor perda de sinal em longas distâncias.
+   - c) Porque não pode ser interceptada.
+   - d) Porque é mais fácil de instalar que o cabo de par trançado.
+
+   **Resposta correta: b) Porque oferece maior largura de banda e menor perda de sinal em longas distâncias.**
+
+3. **O que distingue as Redes Definidas por Software (SDN) das redes tradicionais?**
+   - a) A integração direta dos dispositivos de rede com aplicativos móveis.
+   - b) A separação do plano de controle do plano de dados, permitindo gerenciamento centralizado.
+   - c) A utilização exclusiva de tecnologias sem fio.
+   - d) A eliminação da necessidade de switches e roteadores.
+
+   **Resposta correta: b) A separação do plano de controle do plano de dados, permitindo gerenciamento centralizado.**
+
+4. **Na Internet das Coisas (IoT), qual é um dos principais desafios que as redes precisam enfrentar?**
+   - a) Reduzir o custo dos dispositivos.
+   - b) Melhorar a compatibilidade entre diferentes marcas de dispositivos.
+   - c) Garantir a segurança e o gerenciamento eficaz de uma grande quantidade de dispositivos conectados.
+   - d) Diminuir a velocidade da transmissão de dados.
+
+   **Resposta correta: c) Garantir a segurança e o gerenciamento eficaz de uma grande quantidade de dispositivos conectados.**
+
+5. **O que é Edge Computing e qual é sua principal vantagem em comparação com a Computação em Nuvem tradicional?**
+   - a) Edge Computing processa dados no núcleo da rede, enquanto a Computação em Nuvem processa na periferia.
+   - b) Edge Computing processa dados perto da fonte de geração, reduzindo a latência.
+   - c) Edge Computing é uma tecnologia mais antiga que está sendo substituída pela Computação em Nuvem.
+   - d) Edge Computing requer menos segurança que a Computação em Nuvem.
+
+   **Resposta correta: b) Edge Computing processa dados perto da fonte de geração, reduzindo a latência.**
+
+6. **O modelo de segurança Zero Trust baseia-se em qual princípio fundamental?**
+   - a) Confiança irrestrita em todos os dispositivos dentro da rede.
+   - b) Acesso limitado baseado em localização geográfica.
+   - c) Não confiar em nenhuma entidade dentro ou fora da rede por padrão.
+   - d) Permitir acesso completo a todos os usuários autenticados.
+
+   **Resposta correta: c) Não confiar em nenhuma entidade dentro ou fora da rede por padrão.**
+
+7. **Quais são os principais benefícios das redes autônomas?**
+   - a) Maior intervenção manual e custo reduzido.
+   - b) Maior eficiência operacional e resposta rápida a falhas.
+   - c) Maior necessidade de supervisão humana constante.
+   - d) Maior dependência de hardware específico.
+
+   **Resposta correta: b) Maior eficiência operacional e resposta rápida a falhas.**
+
+8. **Qual é uma das expectativas para as redes 6G em comparação com as redes 5G?**
+   - a) Menor velocidade de transmissão de dados.
+   - b) Maior latência.
+   - c) Suporte avançado para aplicações de realidade aumentada e virtual.
+   - d) Menor capacidade de banda larga.
+
+   **Resposta correta: c) Suporte avançado para aplicações de realidade aumentada e virtual.**
+
+9. **Qual é uma das principais diferenças entre a Computação em Nuvem e a Edge Computing?**
+   - a) A Computação em Nuvem é mais segura que a Edge Computing.
+   - b) A Edge Computing processa dados mais próximo da fonte de geração.
+   - c) A Computação em Nuvem é mais rápida em todas as circunstâncias.
+   - d) A Edge Computing não suporta aplicações de tempo real.
+
+   **Resposta correta: b) A Edge Computing processa dados mais próximo da fonte de geração.**
+
+10. **O que significa a sigla SDN em redes de computadores?**
+    - a) Secure Data Network.
+    - b) Software-Defined Networking.
+    - c) Synchronous Digital Network.
+    - d) Standard Data Network.
+
+    **Resposta correta: b) Software-Defined Networking.**
+
+Estas questões ajudam a avaliar a compreensão dos alunos sobre as tendências emergentes em redes de computadores, abordando conceitos-chave como 5G, SDN, IoT, Edge Computing, e segurança em redes.
