@@ -95,3 +95,20 @@ if __name__ == "__main__":
 ```
 
 Agora a função `criar_banco_e_tabelas()` será chamada automaticamente quando o programa for iniciado, antes do menu ser exibido.
+
+**Implemente o método inserir_responsavel()**
+
+```python
+def inserir_responsavel():
+    nome = input("Digite o nome do responsável: ")
+    endereco = input("Digite o endereço do responsável: ")
+    telefone = input("Digite o telefone do responsável: ")
+
+    # Criar uma nova instância de Responsavel
+    novo_responsavel = Responsavel(nome=nome, endereco=endereco, telefone=telefone)
+
+    # Adicionar à sessão e confirmar (commit)
+    session.add(novo_responsavel)
+    session.commit()
+    print("Responsável inserido com sucesso!")
+```
