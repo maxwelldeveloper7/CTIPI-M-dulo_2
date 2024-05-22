@@ -42,29 +42,118 @@ def criar_banco_e_tabelas():
 
 # Funções para inserir, consultar, atualizar e excluir registros
 def inserir_responsavel():
+    """
+    Função para inserir um novo responsável no banco de dados.
+    """
+    # Obter dados do responsável
     nome = input("Digite o nome do responsável: ")
     endereco = input("Digite o endereço do responsável: ")
     telefone = input("Digite o telefone do responsável: ")
 
     # Criar uma nova instância de Responsavel
-    novo_responsavel = Responsavel(nome=nome, endereco=endereco, telefone=telefone)
+    novo_responsavel = Responsavel(
+        nome=nome,
+        endereco=endereco,
+        telefone=telefone
+    )
 
     # Adicionar à sessão e confirmar (commit)
     session.add(novo_responsavel)
     session.commit()
     print("Responsável inserido com sucesso!")
 
+
 def inserir_crianca():
-    pass  # Implemente a função para inserir uma criança
+    """
+    Função para inserir uma nova criança no banco de dados.
+    """
+    nome = input("Digite o nome da criança: ")
+    idade = int(input("Digite a idade da criança: "))
+    responsavel_id = int(input("Digite o ID do responsável: "))
+
+    # Verificar se o responsável existe
+    responsavel = session.query(Responsavel).filter_by(id=responsavel_id).first()
+    if not responsavel:
+        print("Responsável não encontrado. Por favor, insira um ID de responsável válido.")
+        return
+
+    # Criar uma nova instância de Crianca
+    nova_crianca = Crianca(nome=nome, idade=idade, responsavel_id=responsavel_id)
+
+    # Adicionar à sessão e confirmar (commit)
+    session.add(nova_crianca)
+    session.commit()
+    print("Criança inserida com sucesso!")
 
 def consultar_responsaveis():
-    pass  # Implemente a função para consultar todos os responsáveis e suas crianças
+    """
+    Função para consultar todos os responsáveis e suas respectivas crianças.
+    """
+    responsaveis = session.query(Responsavel).all()
+
+    if not responsaveis:
+        print("Nenhum responsável encontrado.")
+        return
+
+    for responsavel in responsaveis:
+        print(f"\nId: {responsavel.id}")
+        print(f"Responsável: {responsavel.nome}")
+        print(f"Endereço: {responsavel.endereco}")
+        print(f"Telefone: {responsavel.telefone}")
+        print(f"Crianças:")
+        for crianca in responsavel.criancas:
+            print(f"- {crianca.nome} ({crianca.idade} anos)")
 
 def atualizar_responsavel():
-    pass  # Implemente a função para atualizar um responsável
+    """
+    Função para atualizar os dados de um responsável existente.
+    """
+    # Obter o ID do responsável
+    responsavel_id = int(input("Digite o ID do responsável a ser atualizado: "))
+
+    # Verificar se o responsável existe
+    responsavel = session.query(Responsavel).filter_by(id=responsavel_id).first()
+    if not responsavel:
+        print(f"Responsável com ID {responsavel_id} não encontrado.")
+        return
+
+    # Obter novos dados do responsável
+    novo_nome = input("Digite o novo nome do responsável (ou pressione Enter para manter o atual): ")
+    novo_endereco = input("Digite o novo endereço do responsável (ou pressione Enter para manter o atual): ")
+    novo_telefone = input("Digite o novo telefone do responsável (ou pressione Enter para manter o atual): ")
+
+    # Atualizar os dados do responsável
+    if novo_nome:
+        responsavel.nome = novo_nome
+    if novo_endereco:
+        responsavel.endereco = novo_endereco
+    if novo_telefone:
+        responsavel.telefone = novo_telefone
+
+    # Confirmar as alterações (commit)
+    session.commit()
+    print("Responsável atualizado com sucesso!")
 
 def excluir_crianca():
-    pass  # Implemente a função para excluir uma criança
+    """
+    Exclui uma criança do banco de dados, após confirmação do usuário.
+    """
+    crianca_id = int(input("Digite o ID da criança a ser excluída: "))
+    crianca = session.query(Crianca).filter_by(id=crianca_id).first()
+
+    if not crianca:
+        print(f"Criança com ID {crianca_id} não encontrada.")
+        return
+
+    confirmar = input(f"Tem certeza que deseja excluir a criança {crianca.nome}? (sim/não): ")
+    if confirmar.lower() != "sim":
+        print("Exclusão cancelada.")
+        return
+
+    # Exclui a criança do banco de dados
+    session.delete(crianca)
+    session.commit()
+    print(f"Criança {crianca.nome} excluída com sucesso!")
 
 # Função para exibir o menu e interagir com o usuário
 def exibir_menu():
@@ -97,5 +186,9 @@ def exibir_menu():
 
 # Chamada do menu para iniciar o programa
 if __name__ == "__main__":
-    criar_banco_e_tabelas()
-    exibir_menu()
+    try:
+        criar_banco_e_tabelas()
+        exibir_menu()
+    finally:
+        session.close()
+        print("Sessão encerrada.")
