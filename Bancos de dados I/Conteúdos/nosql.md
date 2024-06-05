@@ -167,3 +167,233 @@ Responda às seguintes questões de múltipla escolha. Cada questão tem apenas 
 ---
 
 Essa atividade ajudará os alunos a consolidar os conceitos fundamentais de NoSQL discutidos na aula introdutória.
+
+
+---
+### Fundamentos Teóricos do NoSQL
+
+Para entender plenamente o impacto e a aplicabilidade dos bancos de dados NoSQL, é crucial explorar os fundamentos teóricos que sustentam essa tecnologia. Neste tópico, abordaremos o teorema CAP e as diferenças entre escalabilidade horizontal e vertical. Esses conceitos são essenciais para compreender como os bancos de dados NoSQL se diferenciam dos tradicionais bancos de dados relacionais (RDBMS) e por que são tão eficazes em determinados cenários.
+
+#### Teorema CAP
+
+O teorema CAP, proposto por Eric Brewer em 2000, é um princípio fundamental na compreensão dos sistemas distribuídos, incluindo os bancos de dados NoSQL. O teorema afirma que, em um sistema distribuído, é impossível garantir simultaneamente todas as três seguintes propriedades:
+
+1. **Consistência (Consistency):**
+   - Todos os nós veem os mesmos dados ao mesmo tempo. Em outras palavras, uma leitura retorna o valor mais recente escrito para um determinado dado.
+
+2. **Disponibilidade (Availability):**
+   - Cada solicitação recebe uma resposta (não necessariamente a mais recente), indicando sucesso ou falha.
+
+3. **Tolerância à Partição (Partition Tolerance):**
+   - O sistema continua a operar mesmo se houver perda ou atraso de comunicação entre os nós do sistema.
+
+De acordo com o teorema CAP, um sistema distribuído pode satisfazer no máximo duas dessas propriedades simultaneamente:
+
+- **CP (Consistência + Tolerância à Partição):**
+  - Sistema consistente e tolerante a partições, mas pode sacrificar a disponibilidade durante falhas de rede. Exemplo: HBase.
+
+- **AP (Disponibilidade + Tolerância à Partição):**
+  - Sistema disponível e tolerante a partições, mas pode retornar dados desatualizados em caso de partições. Exemplo: Cassandra.
+
+- **CA (Consistência + Disponibilidade):**
+  - Não é possível em um sistema distribuído que precisa lidar com partições. Este modelo é típico dos bancos de dados relacionais tradicionais em um único nó.
+
+O teorema CAP ajuda a orientar as decisões de design na escolha e configuração de um banco de dados NoSQL, dependendo das necessidades específicas de consistência, disponibilidade e tolerância a falhas da aplicação.
+
+#### Escalabilidade Horizontal vs. Vertical
+
+A escalabilidade é um dos principais motivos para a adoção de bancos de dados NoSQL, especialmente em ambientes que lidam com grandes volumes de dados e altos níveis de concorrência. Existem dois tipos principais de escalabilidade:
+
+1. **Escalabilidade Vertical (Scale-Up):**
+   - Envolve aumentar a capacidade de uma única máquina, adicionando mais recursos como CPU, RAM ou armazenamento.
+   - **Limitações:** Há um limite físico para a quantidade de recursos que uma única máquina pode ter, e os custos podem aumentar significativamente.
+   - **Exemplo:** Atualizar um servidor para um com mais RAM e maior capacidade de processamento.
+
+2. **Escalabilidade Horizontal (Scale-Out):**
+   - Envolve adicionar mais máquinas ao sistema, distribuindo a carga de trabalho entre elas.
+   - **Vantagens:** Pode ser feita de forma quase ilimitada, é mais econômica e oferece alta disponibilidade e tolerância a falhas.
+   - **Exemplo:** Adicionar mais servidores ao cluster para dividir a carga de trabalho entre múltiplos nós.
+   - **Como funciona em NoSQL:** Bancos de dados NoSQL, como MongoDB e Cassandra, são projetados para funcionar de maneira eficiente em clusters distribuídos, permitindo que novos nós sejam adicionados facilmente para gerenciar o aumento da carga de trabalho.
+
+#### Trade-offs em NoSQL
+
+Ao escolher um banco de dados NoSQL, é importante considerar os trade-offs envolvidos, especialmente em relação ao teorema CAP e à escalabilidade. Aqui estão alguns pontos a considerar:
+
+1. **Consistência vs. Disponibilidade:**
+   - Escolher um sistema CP significa que, durante uma partição, o sistema priorizará a consistência sobre a disponibilidade. Em contraste, um sistema AP priorizará a disponibilidade, mesmo que isso signifique servir dados potencialmente desatualizados.
+
+2. **Latência vs. Throughput:**
+   - Bancos de dados NoSQL frequentemente oferecem baixa latência e alto throughput, mas esses benefícios vêm com trade-offs em termos de consistência de dados e complexidade de design.
+
+3. **Modelo de Dados:**
+   - A escolha do modelo de dados (documento, chave-valor, colunar, grafo) deve alinhar-se com os requisitos específicos da aplicação, influenciando o desempenho e a complexidade de consultas.
+
+4. **Complexidade Operacional:**
+   - Bancos de dados distribuídos requerem uma gestão cuidadosa da replicação, particionamento e recuperação de falhas, aumentando a complexidade operacional em comparação com sistemas centralizados.
+
+### Conclusão
+
+Compreender os fundamentos teóricos dos bancos de dados NoSQL é crucial para aproveitar ao máximo suas capacidades. O teorema CAP e os conceitos de escalabilidade horizontal e vertical são pilares essenciais para o design e a implementação eficazes de sistemas de dados distribuídos. Ao reconhecer e equilibrar os trade-offs inerentes a essas tecnologias, é possível criar soluções de dados robustas, escaláveis e adaptadas às necessidades específicas de diversas aplicações modernas.
+
+Claro! Aqui está uma atividade com questões de múltipla escolha para a aula sobre Fundamentos Teóricos do NoSQL. As questões cobrem os conceitos fundamentais do teorema CAP e escalabilidade horizontal vs. vertical.
+
+### Atividade: Fundamentos Teóricos do NoSQL
+
+#### Instruções:
+Responda às seguintes questões de múltipla escolha. Cada questão tem apenas uma resposta correta. Marque a opção correta.
+
+
+
+1. **Qual das seguintes propriedades é definida pelo teorema CAP?**
+   - A) Consistência, Disponibilidade, Persistência
+   - B) Consistência, Disponibilidade, Partição Tolerante
+   - C) Consistência, Alta Performance, Partição Tolerante
+   - D) Confiabilidade, Alta Performance, Persistência
+
+
+2. **No contexto do teorema CAP, o que significa "Consistência"?**
+   - A) Todos os nós veem os mesmos dados ao mesmo tempo
+   - B) O sistema continua a operar mesmo com perda de comunicação
+   - C) Cada solicitação recebe uma resposta indicando sucesso ou falha
+   - D) O sistema pode ser expandido adicionando mais máquinas
+
+
+3. **O que é "Escalabilidade Horizontal"?**
+   - A) Aumento da capacidade de uma única máquina adicionando mais recursos
+   - B) Adição de mais máquinas ao sistema para distribuir a carga de trabalho
+   - C) Melhorar a performance de leitura e escrita em um único servidor
+   - D) Atualização de hardware para aumentar a capacidade de processamento
+
+
+4. **Qual das seguintes afirmações sobre escalabilidade vertical é verdadeira?**
+   - A) Envolve adicionar mais máquinas ao sistema
+   - B) É ilimitada e mais econômica
+   - C) Envolve aumentar a capacidade de uma única máquina
+   - D) É ideal para sistemas distribuídos
+
+
+5. **Qual combinação de propriedades é impossível de garantir simultaneamente em um sistema distribuído, de acordo com o teorema CAP?**
+   - A) Consistência e Disponibilidade
+   - B) Disponibilidade e Partição Tolerante
+   - C) Consistência e Partição Tolerante
+   - D) Consistência, Disponibilidade e Partição Tolerante
+
+
+6. **Em um sistema AP (Disponibilidade + Tolerância à Partição), qual propriedade pode ser comprometida?**
+   - A) Consistência
+   - B) Disponibilidade
+   - C) Partição Tolerante
+   - D) Nenhuma das anteriores
+
+
+7. **Qual dos seguintes bancos de dados NoSQL é um exemplo de um sistema que prioriza Consistência e Tolerância à Partição (CP)?**
+   - A) Cassandra
+   - B) MongoDB
+   - C) HBase
+   - D) Redis
+
+
+8. **Qual é uma vantagem da escalabilidade horizontal em sistemas NoSQL?**
+   - A) Redução da complexidade operacional
+   - B) Aumento ilimitado da capacidade de uma única máquina
+   - C) Alta disponibilidade e tolerância a falhas
+   - D) Menor necessidade de gerenciamento de clusters
+
+
+9. **Qual é o principal trade-off em um sistema CP (Consistência + Tolerância à Partição)?**
+   - A) Compromisso na disponibilidade durante falhas de rede
+   - B) Compromisso na consistência dos dados
+   - C) Menor performance em operações de leitura
+   - D) Complexidade de operações de escrita
+
+
+10. **Qual das seguintes opções melhor descreve um sistema distribuído tolerante a partições (Partition Tolerant)?**
+    - A) Todos os nós sempre veem os mesmos dados
+    - B) O sistema continua a funcionar mesmo com falhas na comunicação entre nós
+    - C) Cada solicitação recebe uma resposta imediata
+    - D) O sistema não é afetado por falhas de hardware
+
+
+### Gabarito:
+1. B) Consistência, Disponibilidade, Partição Tolerante
+2. A) Todos os nós veem os mesmos dados ao mesmo tempo
+3. B) Adição de mais máquinas ao sistema para distribuir a carga de trabalho
+4. C) Envolve aumentar a capacidade de uma única máquina
+5. D) Consistência, Disponibilidade e Partição Tolerante
+6. A) Consistência
+7. C) HBase
+8. C) Alta disponibilidade e tolerância a falhas
+9. A) Compromisso na disponibilidade durante falhas de rede
+10. B) O sistema continua a funcionar mesmo com falhas na comunicação entre nós
+
+---
+
+### Instalação e Configuração do MongoDB Atlas e MongoDB Compass
+
+#### 1. Configuração do MongoDB Atlas
+
+MongoDB Atlas é uma solução de banco de dados totalmente gerenciada na nuvem, que facilita a configuração e o gerenciamento de clusters MongoDB. Aqui estão os passos para configurar um cluster MongoDB no Atlas:
+
+1. **Criação de uma Conta no MongoDB Atlas:**
+   - Acesse [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) e clique em "Try Free".
+   - Siga as instruções para criar uma nova conta ou faça login com uma conta existente.
+
+2. **Criação de um Novo Cluster:**
+   - Após o login, clique em "Build a Cluster".
+   - Selecione a configuração do cluster:
+     - **Cloud Provider & Region:** Escolha o provedor de nuvem (AWS, Google Cloud ou Azure) e a região.
+     - **Cluster Tier:** Selecione o nível de cluster (para testes, o nível gratuito M0 é suficiente).
+     - **Cluster Name:** Dê um nome ao seu cluster.
+   - Clique em "Create Cluster".
+
+3. **Configuração do Acesso ao Cluster:**
+   - Após a criação do cluster, vá para a seção "Security" no painel de controle do Atlas.
+   - **Database Access:** Adicione um novo usuário de banco de dados com um nome de usuário e senha.
+     - Clique em "Add New Database User".
+     - Escolha "Password" como método de autenticação.
+     - Defina o nome de usuário e a senha.
+     - Conceda as permissões apropriadas (por exemplo, "Atlas Admin" para acesso total).
+   - **Network Access:** Adicione o IP que terá acesso ao cluster.
+     - Clique em "Add IP Address".
+     - Adicione seu IP público ou permita acesso de qualquer IP (0.0.0.0/0) para fins de teste, mas tenha cuidado com a segurança.
+
+4. **Obtenção da String de Conexão:**
+   - Vá para "Clusters" e clique em "Connect" no seu cluster.
+   - Escolha "Connect Your Application".
+   - Copie a string de conexão fornecida, algo como:
+     ```plaintext
+     mongodb+srv://<username>:<password>@<cluster-url>/test?retryWrites=true&w=majority
+     ```
+
+#### 2. Utilizando o MongoDB Compass
+
+MongoDB Compass é a interface gráfica oficial do MongoDB para gerenciar e interagir com os seus dados.
+
+1. **Download e Instalação do MongoDB Compass:**
+   - Acesse [MongoDB Compass Download](https://www.mongodb.com/try/download/compass) e baixe a versão apropriada para seu sistema operacional (Windows, macOS, ou Linux).
+   - Siga as instruções de instalação para seu sistema operacional.
+
+2. **Conectando ao Atlas com MongoDB Compass:**
+   - Abra o MongoDB Compass.
+   - Na tela inicial, cole a string de conexão que você copiou do MongoDB Atlas.
+     - Substitua `<username>` e `<password>` pelos valores reais que você definiu.
+     - A string de conexão deve se parecer com:
+       ```plaintext
+       mongodb+srv://myUser:myPassword@cluster0.mongodb.net/test?retryWrites=true&w=majority
+       ```
+   - Clique em "Connect".
+
+3. **Explorando o Banco de Dados:**
+   - Após conectar, você verá o painel de navegação do Compass com informações sobre seu cluster.
+   - **Criando um Banco de Dados:**
+     - Clique em "Create Database".
+     - Nomeie seu banco de dados e a coleção inicial.
+   - **Inserindo Documentos:**
+     - Navegue até a coleção e clique em "Insert Document".
+     - Adicione os dados em formato JSON.
+   - **Consultando Dados:**
+     - Use a interface de consulta para executar operações de leitura, escrita e atualização nos documentos.
+
+### Conclusão
+
+Configurar o MongoDB Atlas e utilizar o MongoDB Compass é um processo simples e eficiente para gerenciar suas bases de dados MongoDB na nuvem. Atlas oferece uma solução de banco de dados escalável e segura, enquanto o Compass fornece uma interface intuitiva para interação e administração dos dados. Com esses passos, você pode rapidamente configurar, conectar e começar a utilizar o MongoDB para suas necessidades de desenvolvimento e produção.
