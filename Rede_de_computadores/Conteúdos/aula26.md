@@ -20,8 +20,6 @@ A computação em nuvem refere-se à entrega de serviços de computação — in
 4. **Acesso sob demanda:** Recursos podem ser provisionados e liberados automaticamente conforme necessário.
 5. **Acesso global:** Serviços podem ser acessados de qualquer lugar com uma conexão à internet.
 
-**Ilustração 1:** *Diagrama mostrando a arquitetura de uma nuvem com exemplos de serviços como armazenamento, banco de dados e computação.*
-
 #### Modelos de Serviço na Computação em Nuvem
 
 **1. Infraestrutura como Serviço (IaaS)**
@@ -35,8 +33,6 @@ Oferece uma plataforma que permite aos desenvolvedores criar, testar e implantar
 **3. Software como Serviço (SaaS)**
 
 Distribui aplicativos pela internet. Usuários acessam software através de um navegador web, sem necessidade de instalação local. Exemplos incluem Google Workspace, Microsoft 365 e Salesforce.
-
-**Ilustração 2:** *Tabela comparativa dos modelos de serviço IaaS, PaaS e SaaS, mostrando exemplos e características.*
 
 #### Modelos de Implantação na Computação em Nuvem
 
@@ -52,8 +48,6 @@ Infraestrutura é dedicada a uma única organização, oferecendo maior controle
 
 Combina nuvens públicas e privadas, permitindo que dados e aplicativos sejam compartilhados entre elas. Oferece maior flexibilidade e opções de implantação.
 
-**Ilustração 3:** *Diagrama ilustrando os modelos de implantação de nuvem: pública, privada e híbrida.*
-
 #### Integração de Computação em Nuvem com Redes
 
 **1. Conectividade de Rede**
@@ -68,8 +62,6 @@ O gerenciamento de tráfego entre a nuvem e a rede local é crucial. Serviços c
 
 A segurança é uma consideração crítica na integração com a nuvem. Isso inclui a implementação de firewalls, sistemas de detecção e prevenção de intrusões (IDS/IPS), criptografia de dados em trânsito e em repouso, além de políticas de acesso e autenticação robustas.
 
-**Ilustração 4:** *Gráfico mostrando a integração de uma rede local com serviços de nuvem usando VPNs e conexões dedicadas.*
-
 **4. Monitoramento e Gerenciamento**
 
 O monitoramento contínuo e o gerenciamento de recursos são essenciais para garantir o desempenho e a segurança na nuvem. Ferramentas como AWS CloudWatch, Azure Monitor e Google Cloud Operations Suite ajudam a monitorar a utilização de recursos, a performance de aplicativos e a detectar possíveis ameaças.
@@ -77,8 +69,6 @@ O monitoramento contínuo e o gerenciamento de recursos são essenciais para gar
 **5. Automação e Orquestração**
 
 Automação de processos e orquestração de tarefas são essenciais para gerenciar a complexidade da integração em nuvem. Ferramentas como Terraform, Ansible e Kubernetes permitem a automação da provisão, configuração e gerenciamento de infraestrutura na nuvem.
-
-**Ilustração 5:** *Diagrama mostrando um sistema automatizado de gerenciamento e monitoramento de recursos na nuvem, destacando ferramentas de automação e orquestração.*
 
 #### Aplicações Práticas da Integração Nuvem-Rede
 
@@ -98,15 +88,13 @@ A nuvem oferece um ambiente flexível para desenvolvimento e teste de novos apli
 
 Armazenar backups na nuvem garante que os dados estejam protegidos contra perdas locais e possam ser acessados de qualquer lugar.
 
-**Ilustração 6:** *Exemplos de casos de uso práticos, como expansão de capacidade, recuperação de desastres e desenvolvimento na nuvem.*
-
 #### Conclusão
 
 A computação em nuvem oferece inúmeras vantagens, desde a escalabilidade e flexibilidade até a redução de custos e a agilidade no desenvolvimento de aplicações. A integração eficaz com redes de computadores é essencial para maximizar esses benefícios. Compreender os fundamentos da computação em nuvem, os modelos de serviço e implantação, e as melhores práticas para integração de rede, prepara os profissionais para tirar o máximo proveito das tecnologias de nuvem em diversos cenários.
 
 ---
 
-### Atividade Avaliativa de Múltipla Escolha
+### Atividade Avaliativa
 
 1. **Qual das seguintes opções NÃO é uma característica principal da computação em nuvem?**
    - a) Elasticidade
