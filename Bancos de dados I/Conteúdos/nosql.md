@@ -397,3 +397,144 @@ MongoDB Compass é a interface gráfica oficial do MongoDB para gerenciar e inte
 ### Conclusão
 
 Configurar o MongoDB Atlas e utilizar o MongoDB Compass é um processo simples e eficiente para gerenciar suas bases de dados MongoDB na nuvem. Atlas oferece uma solução de banco de dados escalável e segura, enquanto o Compass fornece uma interface intuitiva para interação e administração dos dados. Com esses passos, você pode rapidamente configurar, conectar e começar a utilizar o MongoDB para suas necessidades de desenvolvimento e produção.
+---
+### Operações Básicas em MongoDB
+
+MongoDB é um banco de dados NoSQL baseado em documentos que utiliza uma estrutura de dados flexível, permitindo que os documentos em uma coleção tenham esquemas variados. Neste tópico, abordaremos as operações básicas no MongoDB, usando como exemplo a criação e manipulação de uma coleção chamada "responsáveis".
+
+#### 1. Conectar ao MongoDB
+
+Antes de realizar qualquer operação, precisamos nos conectar ao MongoDB. Supondo que estamos usando o MongoDB Atlas e MongoDB Compass:
+
+1. **Conectar ao MongoDB Atlas usando MongoDB Compass:**
+   - Abra o MongoDB Compass.
+   - Cole a string de conexão fornecida pelo MongoDB Atlas (por exemplo, `mongodb+srv://<username>:<password>@<cluster-url>/test?retryWrites=true&w=majority`).
+   - Substitua `<username>` e `<password>` pelos valores reais.
+   - Clique em "Connect".
+
+#### 2. Criar a Coleção "responsáveis"
+
+Em MongoDB, coleções são criadas implicitamente quando você insere o primeiro documento. No entanto, podemos criar explicitamente uma coleção se quisermos.
+
+##### Usando o MongoDB Compass:
+1. **Criar a Coleção:**
+   - Navegue até o banco de dados onde você deseja criar a coleção.
+   - Clique em "Create Collection".
+   - Digite o nome da coleção como "responsáveis".
+   - Clique em "Create".
+
+##### Usando a Linha de Comando:
+1. **Abra o shell do MongoDB:**
+   ```bash
+   mongo
+   ```
+
+2. **Selecione o banco de dados (se não existir, será criado ao inserir dados):**
+   ```javascript
+   use nomeDoBancoDeDados
+   ```
+
+3. **Crie a coleção (opcional - MongoDB cria a coleção automaticamente na primeira inserção):**
+   ```javascript
+   db.createCollection("responsáveis")
+   ```
+
+#### 3. Inserir Documentos na Coleção
+
+Vamos inserir documentos na coleção "responsáveis" com os seguintes campos: `cpf`, `nome`, `parentesco`, `endereco`, `bairro`, `referencia`, `endereco_trabalho`, `rg`, `telefone`, `senha`.
+
+##### Usando o MongoDB Compass:
+1. **Inserir Documento:**
+   - Navegue até a coleção "responsáveis".
+   - Clique em "Insert Document".
+   - Insira o documento em formato JSON:
+     ```json
+     {
+       "cpf": "12345678900",
+       "nome": "João Silva",
+       "parentesco": "Pai",
+       "endereco": "Rua das Flores, 123",
+       "bairro": "Jardim das Rosas",
+       "referencia": "Próximo ao mercado ABC",
+       "endereco_trabalho": "Av. Central, 456",
+       "rg": "MG1234567",
+       "telefone": "(31) 98765-4321",
+       "senha": "senhaSegura123"
+     }
+     ```
+   - Clique em "Insert".
+
+##### Usando a Linha de Comando:
+1. **Inserir Documento:**
+   ```javascript
+   db.responsáveis.insertOne({
+     cpf: "12345678900",
+     nome: "João Silva",
+     parentesco: "Pai",
+     endereco: "Rua das Flores, 123",
+     bairro: "Jardim das Rosas",
+     referencia: "Próximo ao mercado ABC",
+     endereco_trabalho: "Av. Central, 456",
+     rg: "MG1234567",
+     telefone: "(31) 98765-4321",
+     senha: "senhaSegura123"
+   })
+   ```
+
+#### 4. Consultar Documentos na Coleção
+
+Podemos consultar documentos na coleção "responsáveis" utilizando diferentes critérios.
+
+##### Usando o MongoDB Compass:
+1. **Consultar Documentos:**
+   - Navegue até a coleção "responsáveis".
+   - Clique em "Find".
+   - Deixe o campo de consulta vazio para retornar todos os documentos ou insira critérios específicos em formato JSON:
+     ```json
+     { "nome": "João Silva" }
+     ```
+
+##### Usando a Linha de Comando:
+1. **Consultar Documentos:**
+   ```javascript
+   db.responsáveis.find({ nome: "João Silva" }).pretty()
+   ```
+
+#### 5. Atualizar Documentos na Coleção
+
+Podemos atualizar documentos existentes utilizando várias estratégias.
+
+##### Usando o MongoDB Compass:
+1. **Atualizar Documento:**
+   - Encontre o documento que deseja atualizar.
+   - Clique no ícone de edição (lápis) próximo ao documento.
+   - Faça as alterações necessárias e clique em "Update".
+
+##### Usando a Linha de Comando:
+1. **Atualizar Documento:**
+   ```javascript
+   db.responsáveis.updateOne(
+     { cpf: "12345678900" },
+     { $set: { endereco: "Rua Nova, 456" } }
+   )
+   ```
+
+#### 6. Remover Documentos da Coleção
+
+Podemos remover documentos da coleção com base em critérios específicos.
+
+##### Usando o MongoDB Compass:
+1. **Remover Documento:**
+   - Encontre o documento que deseja remover.
+   - Clique no ícone de lixeira próximo ao documento.
+   - Confirme a remoção.
+
+##### Usando a Linha de Comando:
+1. **Remover Documento:**
+   ```javascript
+   db.responsáveis.deleteOne({ cpf: "12345678900" })
+   ```
+
+### Conclusão
+
+Estas operações básicas cobrem a criação, leitura, atualização e exclusão (CRUD) de documentos em uma coleção MongoDB. Utilizando o MongoDB Compass, você tem uma interface gráfica intuitiva para gerenciar seus dados, enquanto a linha de comando oferece uma forma poderosa e flexível de realizar operações diretamente no banco de dados. Estas ferramentas e operações são fundamentais para trabalhar eficazmente com o MongoDB em qualquer aplicação.
