@@ -397,6 +397,7 @@ MongoDB Compass é a interface gráfica oficial do MongoDB para gerenciar e inte
 ### Conclusão
 
 Configurar o MongoDB Atlas e utilizar o MongoDB Compass é um processo simples e eficiente para gerenciar suas bases de dados MongoDB na nuvem. Atlas oferece uma solução de banco de dados escalável e segura, enquanto o Compass fornece uma interface intuitiva para interação e administração dos dados. Com esses passos, você pode rapidamente configurar, conectar e começar a utilizar o MongoDB para suas necessidades de desenvolvimento e produção.
+
 ---
 ### Operações Básicas em MongoDB
 
