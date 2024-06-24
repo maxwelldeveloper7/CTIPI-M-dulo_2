@@ -1,92 +1,81 @@
-### Semana 15-16: Bancos de Dados e Node.js
+### Aula 8: Bancos de Dados e Node.js
 
 #### Objetivos
-- Compreender como integrar bancos de dados com Node.js.
-- Utilizar a biblioteca Mongoose para interação com bancos de dados NoSQL (MongoDB).
+- Integrar bancos de dados com Node.js.
+- Utilizar a biblioteca Mongoose para interação com bancos MongoDB no MongoDB Atlas.
 
 ### Introdução
 
-Node.js é uma plataforma poderosa para o desenvolvimento de aplicações backend. Uma das tarefas mais comuns é integrar a aplicação com um banco de dados. MongoDB, um banco de dados NoSQL orientado a documentos, é uma escolha popular para desenvolvedores Node.js devido à sua flexibilidade e escalabilidade.
+MongoDB é um banco de dados NoSQL popular, ideal para aplicações que lidam com grandes volumes de dados não estruturados. O Mongoose é uma biblioteca de Node.js que facilita a interação com MongoDB, proporcionando uma estrutura robusta para esquemas e validação de dados.
 
-### Configurando o Ambiente
+### Instalando Mongoose
 
-#### Passo 1: Criar uma Conta no MongoDB Atlas
+Inicie um novo projeto Node.js e instale o Mongoose:
 
-1. Acesse sua conta do [MongoDB Atlas](https://www.mongodb.com/cloud/atlas). Crie uma caso ainda não o tenha feito.
-2. Crie um novo cluster com o nome mongooseTeste, e anote as credenciais de acesso e o URI de conexão.
-
-#### Passo 2: Inicializar um Novo Projeto Node.js
-
-1. Crie um diretório para o seu projeto e inicialize o Node.js:
-   ```sh
-   mkdir mongo-project
-   cd mongo-project
-   npm init -y
-   ```
-
-2. Instale as dependências necessárias:
-   ```sh
-   npm install express mongoose body-parser
-   ```
-
-### Estrutura do Projeto
-
-```
-mongo-project/
-├── models/
-│   └── product.js
-├── routes/
-│   └── products.js
-├── app.js
-└── package.json
+```sh
+mkdir node-mongo
+cd node-mongo
+npm init -y
+npm install mongoose
 ```
 
-### Conectando ao MongoDB com Mongoose
+### Conectando ao MongoDB Atlas
 
 #### app.js
-```javascript
-const express = require('express');
-const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
-const productRoutes = require('./routes/products');
 
+```javascript
+const mongoose = require('mongoose');
+
+// Substitua '<username>', '<password>' e '<dbname>' com suas credenciais do MongoDB Atlas
+const dbURI = 'mongodb+srv://<username>:<password>@cluster0.mongodb.net/<dbname>?retryWrites=true&w=majority';
+
+mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
+    .then((result) => console.log('Conectado ao MongoDB'))
+    .catch((err) => console.log(err));
+
+const express = require('express');
 const app = express();
 const port = 3000;
-
-// Substitua <username>, <password> e <dbname> com suas credenciais e nome do banco de dados
-const mongoURI = 'mongodb+srv://<username>:<password>@cluster0.mongodb.net/<dbname>?retryWrites=true&w=majority';
-
-mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => console.log('Conectado ao MongoDB Atlas'))
-    .catch(err => console.error('Erro ao conectar ao MongoDB Atlas:', err));
-
-app.use(bodyParser.json());
-
-app.use('/products', productRoutes);
 
 app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}/`);
 });
 ```
 
-### Criando o Modelo de Produto
+### Definindo um Modelo com Mongoose
+
+Um modelo em Mongoose define a estrutura dos documentos no MongoDB.
 
 #### models/product.js
+
 ```javascript
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-const productSchema = new mongoose.Schema({
-    name: { type: String, required: true },
-    price: { type: Number, required: true },
-    stock: { type: Number, required: true }
-});
+const productSchema = new Schema({
+    name: {
+        type: String,
+        required: true
+    },
+    price: {
+        type: Number,
+        required: true
+    },
+    stock: {
+        type: Number,
+        required: true
+    }
+}, { timestamps: true });
 
-module.exports = mongoose.model('Product', productSchema);
+const Product = mongoose.model('Product', productSchema);
+
+module.exports = Product;
 ```
 
 ### Criando Rotas para a API
 
 #### routes/products.js
+
 ```javascript
 const express = require('express');
 const router = express.Router();
@@ -98,7 +87,7 @@ router.get('/', async (req, res) => {
         const products = await Product.find();
         res.json(products);
     } catch (err) {
-        res.status(500).send('Erro ao recuperar produtos');
+        res.status(500).json({ message: err.message });
     }
 });
 
@@ -106,438 +95,395 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
     try {
         const product = await Product.findById(req.params.id);
-        if (product) {
-            res.json(product);
-        } else {
-            res.status(404).send('Produto não encontrado');
+        if (product == null) {
+            return res.status(404).json({ message: 'Produto não encontrado' });
         }
+        res.json(product);
     } catch (err) {
-        res.status(500).send('Erro ao recuperar produto');
+        res.status(500).json({ message: err.message });
     }
 });
 
 // Criar um novo produto
 router.post('/', async (req, res) => {
-    const newProduct = new Product({
+    const product = new Product({
         name: req.body.name,
         price: req.body.price,
         stock: req.body.stock
     });
+
     try {
-        const savedProduct = await newProduct.save();
-        res.status(201).json(savedProduct);
+        const newProduct = await product.save();
+        res.status(201).json(newProduct);
     } catch (err) {
-        res.status(400).send('Erro ao criar produto');
+        res.status(400).json({ message: err.message });
     }
 });
 
 // Atualizar um produto existente
 router.put('/:id', async (req, res) => {
     try {
-        const updatedProduct = await Product.findByIdAndUpdate(req.params.id, req.body, { new: true });
-        if (updatedProduct) {
-            res.json(updatedProduct);
-        } else {
-            res.status(404).send('Produto não encontrado');
+        const product = await Product.findById(req.params.id);
+        if (product == null) {
+            return res.status(404).json({ message: 'Produto não encontrado' });
         }
+
+        if (req.body.name != null) {
+            product.name = req.body.name;
+        }
+        if (req.body.price != null) {
+            product.price = req.body.price;
+        }
+        if (req.body.stock != null) {
+            product.stock = req.body.stock;
+        }
+
+        const updatedProduct = await product.save();
+        res.json(updatedProduct);
     } catch (err) {
-        res.status(400).send('Erro ao atualizar produto');
+        res.status(400).json({ message: err.message });
     }
 });
 
 // Excluir um produto
 router.delete('/:id', async (req, res) => {
     try {
-        const deletedProduct = await Product.findByIdAndDelete(req.params.id);
-        if (deletedProduct) {
-            res.status(204).send();
-        } else {
-            res.status(404).send('Produto não encontrado');
+        const product = await Product.findById(req.params.id);
+        if (product == null) {
+            return res.status(404).json({ message: 'Produto não encontrado' });
         }
+
+        await product.remove();
+        res.json({ message: 'Produto excluído' });
     } catch (err) {
-        res.status(500).send('Erro ao excluir produto');
+        res.status(500).json({ message: err.message });
     }
 });
 
 module.exports = router;
 ```
 
-### Testando a API
+### Integrando as Rotas ao Servidor
 
-Você pode testar sua API usando ferramentas como Postman ou curl. Aqui estão algumas instruções para chamar as rotas:
+#### app.js (atualizado)
 
-1. **Recuperar todos os produtos:**
-   - **GET** request para `http://localhost:3000/products`
-   - Resposta esperada:
-     ```json
-     []
-     ```
+```javascript
+const express = require('express');
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+const productRoutes = require('./routes/products');
 
-2. **Recuperar um produto por ID:**
-   - **GET** request para `http://localhost:3000/products/:id`
-   - Substitua `:id` pelo ID do produto desejado.
+const app = express();
+const port = 3000;
 
-3. **Criar um novo produto:**
-   - **POST** request para `http://localhost:3000/products`
-   - Body da requisição:
-     ```json
-     {
-       "name": "Produto 1",
-       "price": 100,
-       "stock": 10
-     }
-     ```
-   - Resposta esperada:
-     ```json
-     {
-       "_id": "5f5f5f5f5f5f5f5f5f5f5f",
-       "name": "Produto 1",
-       "price": 100,
-       "stock": 10
-     }
-     ```
+// Substitua '<username>', '<password>' e '<dbname>' com suas credenciais do MongoDB Atlas
+const dbURI = 'mongodb+srv://<username>:<password>@cluster0.mongodb.net/<dbname>?retryWrites=true&w=majority';
 
-4. **Atualizar um produto existente:**
-   - **PUT** request para `http://localhost:3000/products/:id`
-   - Substitua `:id` pelo ID do produto.
-   - Body da requisição:
-     ```json
-     {
-       "name": "Produto 1 atualizado",
-       "price": 150,
-       "stock": 5
-     }
-     ```
-   - Resposta esperada:
-     ```json
-     {
-       "_id": "5f5f5f5f5f5f5f5f5f5f5f",
-       "name": "Produto 1 atualizado",
-       "price": 150,
-       "stock": 5
-     }
-     ```
+mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
+    .then((result) => console.log('Conectado ao MongoDB'))
+    .catch((err) => console.log(err));
 
-5. **Excluir um produto:**
-   - **DELETE** request para `http://localhost:3000/products/:id`
-   - Substitua `:id` pelo ID do produto a ser excluído.
-   - Resposta esperada: status 204 No Content.
+app.use(bodyParser.json());
+app.use('/products', productRoutes);
+
+app.listen(port, () => {
+    console.log(`Servidor rodando em http://localhost:${port}/`);
+});
+```
 
 ### Exercícios Práticos
 
-1. **Crie um novo modelo de dados para representar clientes em uma loja online, com atributos como nome, email e endereço. Implemente as rotas CRUD para este modelo.**
+1. **Adicione um campo "categoria" ao modelo de produto e ajuste as rotas para manipular este novo campo.**
 
-2. **Adicione validação de dados para as rotas de produtos utilizando a biblioteca `joi` para garantir que os campos `name`, `price`, e `stock` são fornecidos e possuem valores válidos.**
-
-3. **Implemente uma rota para buscar produtos por nome utilizando uma query string.**
-
-4. **Implemente paginação para a rota que recupera todos os produtos.**
-
-5. **Crie um sistema de autenticação básico utilizando tokens JWT para proteger as rotas de criação, atualização e exclusão de produtos.**
-
-### Resolução dos Exercícios Práticos
-
-#### Exercício 1: Modelo de Clientes
-
-**models/customer.js**
+**models/product.js (atualizado)**
 ```javascript
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-const customerSchema = new mongoose.Schema({
-    name: { type: String, required: true },
-    email: { type: String, required: true, unique: true },
-    address: { type: String, required: true }
-});
+const productSchema = new Schema({
+    name: {
+        type: String,
+        required: true
+    },
+    price: {
+        type: Number,
+        required: true,
+        min: 0
+    },
+    stock: {
+        type: Number,
+        required: true,
+        min: 0
+    },
+    category: {
+        type: String,
+        required: true
+    }
+}, { timestamps: true });
 
-module.exports = mongoose.model('Customer', customerSchema);
+const Product = mongoose.model('Product', productSchema);
+
+module.exports = Product;
 ```
 
-**routes/customers.js**
+**routes/products.js (atualizado)**
 ```javascript
 const express = require('express');
 const router = express.Router();
-const Customer = require('../models/customer');
+const Product = require('../models/product');
+
+// Recuperar todos os produtos
+router.get('/', async (req, res) => {
+    try {
+        const products = await Product.find();
+        res.json(products);
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+});
+
+// Recuperar um produto por ID
+router.get('/:id', async (req, res) => {
+    try {
+        const product = await Product.findById(req.params.id);
+        if (product == null) {
+            return res.status(404).json({ message: 'Produto não encontrado' });
+        }
+        res.json(product);
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+});
+
+// Criar um novo produto
+router.post('/', async (req, res) => {
+    const product = new Product({
+        name: req.body.name,
+        price: req.body.price,
+        stock: req.body.stock,
+        category: req.body.category
+    });
+
+    try {
+        const newProduct = await product.save();
+        res.status(201).json(newProduct);
+    } catch (err) {
+        res.status(400).json({ message: err.message });
+    }
+});
+
+// Atualizar um produto existente
+router.put('/:id', async (req, res) => {
+    try {
+        const product = await Product.findById(req.params.id);
+        if (product == null) {
+            return res.status(404).json({ message: 'Produto não encontrado' });
+        }
+
+        if (req.body.name != null) {
+            product.name = req.body.name;
+        }
+        if (req.body.price != null) {
+            product.price = req.body.price;
+        }
+        if (req.body.stock != null) {
+            product.stock = req.body.stock;
+        }
+        if (req.body.category != null) {
+            product.category = req.body.category;
+        }
+
+        const updatedProduct = await product.save();
+        res.json(updatedProduct);
+    } catch (err) {
+        res.status(400).json({ message: err.message });
+    }
+});
+
+// Excluir um produto
+router.delete('/:id', async (req, res) => {
+    try {
+        const product = await Product.findById(req.params.id);
+        if (product == null) {
+            return res.status(404).json({ message: 'Produto não encontrado' });
+        }
+
+        await product.remove();
+        res.json({ message
+
+: 'Produto excluído' });
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+});
+
+module.exports = router;
+```
+
+2. **Crie um novo modelo para representar clientes, com atributos como nome, email e endereço. Implemente as rotas CRUD para este modelo.**
+
+**models/client.js**
+```javascript
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+const clientSchema = new Schema({
+    name: {
+        type: String,
+        required: true
+    },
+    email: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    address: {
+        type: String,
+        required: true
+    }
+}, { timestamps: true });
+
+const Client = mongoose.model('Client', clientSchema);
+
+module.exports = Client;
+```
+
+**routes/clients.js**
+```javascript
+const express = require('express');
+const router = express.Router();
+const Client = require('../models/client');
 
 // Recuperar todos os clientes
 router.get('/', async (req, res) => {
     try {
-        const customers = await Customer.find();
-        res.json(customers);
+        const clients = await Client.find();
+        res.json(clients);
     } catch (err) {
-        res.status(500).send('Erro ao recuperar clientes');
+        res.status(500).json({ message: err.message });
     }
 });
 
 // Recuperar um cliente por ID
 router.get('/:id', async (req, res) => {
     try {
-        const customer = await Customer.findById(req.params.id);
-        if (customer) {
-            res.json(customer);
-        } else {
-            res.status(404).send('Cliente não encontrado');
+        const client = await Client.findById(req.params.id);
+        if (client == null) {
+            return res.status(404).json({ message: 'Cliente não encontrado' });
         }
+        res.json(client);
     } catch (err) {
-        res.status(500).send('Erro ao recuperar cliente');
+        res.status(500).json({ message: err.message });
     }
 });
 
 // Criar um novo cliente
 router.post('/', async (req, res) => {
-    const newCustomer = new Customer({
+    const client = new Client({
         name: req.body.name,
         email: req.body.email,
         address: req.body.address
     });
-    try {
-        const savedCustomer = await newCustomer.save();
-        res.status(201).json(savedCustomer);
-    } catch (err
 
-) {
-        res.status(400).send('Erro ao criar cliente');
+    try {
+        const newClient = await client.save();
+        res.status(201).json(newClient);
+    } catch (err) {
+        res.status(400).json({ message: err.message });
     }
 });
 
 // Atualizar um cliente existente
 router.put('/:id', async (req, res) => {
     try {
-        const updatedCustomer = await Customer.findByIdAndUpdate(req.params.id, req.body, { new: true });
-        if (updatedCustomer) {
-            res.json(updatedCustomer);
-        } else {
-            res.status(404).send('Cliente não encontrado');
+        const client = await Client.findById(req.params.id);
+        if (client == null) {
+            return res.status(404).json({ message: 'Cliente não encontrado' });
         }
+
+        if (req.body.name != null) {
+            client.name = req.body.name;
+        }
+        if (req.body.email != null) {
+            client.email = req.body.email;
+        }
+        if (req.body.address != null) {
+            client.address = req.body.address;
+        }
+
+        const updatedClient = await client.save();
+        res.json(updatedClient);
     } catch (err) {
-        res.status(400).send('Erro ao atualizar cliente');
+        res.status(400).json({ message: err.message });
     }
 });
 
 // Excluir um cliente
 router.delete('/:id', async (req, res) => {
     try {
-        const deletedCustomer = await Customer.findByIdAndDelete(req.params.id);
-        if (deletedCustomer) {
-            res.status(204).send();
-        } else {
-            res.status(404).send('Cliente não encontrado');
+        const client = await Client.findById(req.params.id);
+        if (client == null) {
+            return res.status(404).json({ message: 'Cliente não encontrado' });
         }
+
+        await client.remove();
+        res.json({ message: 'Cliente excluído' });
     } catch (err) {
-        res.status(500).send('Erro ao excluir cliente');
+        res.status(500).json({ message: err.message });
     }
 });
 
 module.exports = router;
 ```
 
-**Atualize o app.js para incluir as rotas de clientes:**
+3. **Adicione validação de dados para garantir que o preço de um produto seja maior que zero e que o estoque não seja negativo.**
+
+**models/product.js (atualizado)**
 ```javascript
-const express = require('express');
-const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const productRoutes = require('./routes/products');
-const customerRoutes = require('./routes/customers');
+const Schema = mongoose.Schema;
 
-const app = express();
-const port = 3000;
-
-const mongoURI = 'mongodb+srv://<username>:<password>@cluster0.mongodb.net/<dbname>?retryWrites=true&w=majority';
-
-mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => console.log('Conectado ao MongoDB Atlas'))
-    .catch(err => console.error('Erro ao conectar ao MongoDB Atlas:', err));
-
-app.use(bodyParser.json());
-
-app.use('/products', productRoutes);
-app.use('/customers', customerRoutes);
-
-app.listen(port, () => {
-    console.log(`Servidor rodando em http://localhost:${port}/`);
-});
-```
-
-#### Exercício 2: Validação de Dados
-
-**Instale a biblioteca joi:**
-```sh
-npm install joi
-```
-
-**middleware/validation.js**
-```javascript
-const Joi = require('joi');
-
-const productSchema = Joi.object({
-    name: Joi.string().required(),
-    price: Joi.number().required(),
-    stock: Joi.number().required()
-});
-
-const validateProduct = (req, res, next) => {
-    const { error } = productSchema.validate(req.body);
-    if (error) {
-        return res.status(400).send(error.details[0].message);
+const productSchema = new Schema({
+    name: {
+        type: String,
+        required: true
+    },
+    price: {
+        type: Number,
+        required: true,
+        min: 0
+    },
+    stock: {
+        type: Number,
+        required: true,
+        min: 0
+    },
+    category: {
+        type: String,
+        required: true
     }
-    next();
-};
+}, { timestamps: true });
 
-module.exports = {
-    validateProduct
-};
+const Product = mongoose.model('Product', productSchema);
+
+module.exports = Product;
 ```
 
-**Atualize o app.js para incluir o middleware de validação:**
+4. **Implemente uma rota para pesquisar produtos por categoria.**
+
+**routes/products.js (adicionar rota)**
 ```javascript
-const express = require('express');
-const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
-const productRoutes = require('./routes/products');
-const customerRoutes = require('./routes/customers');
-const { validateProduct } = require('./middleware/validation');
-
-const app = express();
-const port = 3000;
-
-const mongoURI = 'mongodb+srv://<username>:<password>@cluster0.mongodb.net/<dbname>?retryWrites=true&w=majority';
-
-mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => console.log('Conectado ao MongoDB Atlas'))
-    .catch(err => console.error('Erro ao conectar ao MongoDB Atlas:', err));
-
-app.use(bodyParser.json());
-
-app.use('/products', validateProduct, productRoutes);
-app.use('/customers', customerRoutes);
-
-app.listen(port, () => {
-    console.log(`Servidor rodando em http://localhost:${port}/`);
-});
-```
-
-#### Exercício 3: Busca por Nome
-
-**Atualize routes/products.js:**
-```javascript
-// Buscar produtos por nome
-router.get('/search', async (req, res) => {
-    const name = req.query.name;
+// Recuperar produtos por categoria
+router.get('/category/:category', async (req, res) => {
     try {
-        const products = await Product.find({ name: new RegExp(name, 'i') });
+        const products = await Product.find({ category: req.params.category });
         res.json(products);
     } catch (err) {
-        res.status(500).send('Erro ao buscar produtos');
+        res.status(500).json({ message: err.message });
     }
 });
 ```
 
-Para buscar produtos por nome, use a rota:
-```
-GET http://localhost:3000/products/search?name=NomeDoProduto
-```
+### Conclusão
 
-#### Exercício 4: Paginação
-
-**Atualize routes/products.js:**
-```javascript
-// Recuperar todos os produtos com paginação
-router.get('/', async (req, res) => {
-    const { page = 1, limit = 10 } = req.query;
-    try {
-        const products = await Product.find()
-            .skip((page - 1) * limit)
-            .limit(Number(limit));
-        res.json(products);
-    } catch (err) {
-        res.status(500).send('Erro ao recuperar produtos');
-    }
-});
-```
-
-Para recuperar produtos com paginação, use a rota:
-```
-GET http://localhost:3000/products?page=1&limit=10
-```
-
-#### Exercício 5: Autenticação com JWT
-
-**Instale os pacotes necessários:**
-```sh
-npm install jsonwebtoken
-```
-
-**middleware/auth.js**
-```javascript
-const jwt = require('jsonwebtoken');
-const secretKey = 'your-secret-key';
-
-const authenticateToken = (req, res, next) => {
-    const token = req.header('Authorization');
-    if (!token) return res.status(401).send('Acesso negado');
-
-    try {
-        const verified = jwt.verify(token, secretKey);
-        req.user = verified;
-        next();
-    } catch (err) {
-        res.status(400).send('Token inválido');
-    }
-};
-
-module.exports = {
-    authenticateToken
-};
-```
-
-**app.js**
-```javascript
-const express = require('express');
-const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
-const productRoutes = require('./routes/products');
-const customerRoutes = require('./routes/customers');
-const { validateProduct } = require('./middleware/validation');
-const { authenticateToken } = require('./middleware/auth');
-
-const app = express();
-const port = 3000;
-
-const mongoURI = 'mongodb+srv://<username>:<password>@cluster0.mongodb.net/<dbname>?retryWrites=true&w=majority';
-
-mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => console.log('Conectado ao MongoDB Atlas'))
-    .catch(err => console.error('Erro ao conectar ao MongoDB Atlas:', err));
-
-app.use(bodyParser.json());
-
-app.use('/products', authenticateToken, validateProduct, productRoutes);
-app.use('/customers', authenticateToken, customerRoutes);
-
-app.post('/login', (req, res) => {
-    const user = {
-        id: 1,
-        username: 'user',
-        email: 'user@example.com'
-    };
-    const token = jwt.sign(user, 'your-secret-key');
-    res.json({ token });
-});
-
-app.listen(port, () => {
-    console.log(`Servidor rodando em http://localhost:${port}/`);
-});
-```
-
-Para gerar um token de autenticação, use a rota:
-```
-POST http://localhost:3000/login
-```
-Body da requisição:
-```json
-{
-    "username": "user",
-    "password": "password"
-}
-```
-
-Na resposta, você receberá um token que pode ser usado para acessar as rotas protegidas.
+Nesta semana, você aprendeu a integrar bancos de dados MongoDB com Node.js usando Mongoose, criando e manipulando dados de forma eficiente. Esses conceitos são fundamentais para o desenvolvimento de aplicações web escaláveis e robustas.
