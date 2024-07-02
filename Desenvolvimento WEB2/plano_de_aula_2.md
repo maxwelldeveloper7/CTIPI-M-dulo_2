@@ -36,12 +36,7 @@
 | 10/04    | Recuperação Paralela                                                                                     | Realizar atividades de recuperação para os alunos com dificuldades   | Atividades práticas                                      | Computadores, internet            | Análise das atividades               | 50 minutos   |
 
 
-<br>
-
-### Disciplina: Desenvolvimento Web 2
-### Professor: Maxwell de Oliveira Chaves
-### Escola: Escola Estadual Antônio Batista da Mota
-### Série: INFORMÁTICA PARA INTERNET EP PRO 1
+---
 
 #### Plano de Aula - Segundo Bimestre
 

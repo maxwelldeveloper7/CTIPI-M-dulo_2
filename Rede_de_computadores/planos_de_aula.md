@@ -45,10 +45,8 @@
 | 11/04    | Avaliação Bimestral                                                    | Avaliar o conhecimento adquirido durante o bimestre                       | Prova escrita                                         | Datashow, quadro                   | Correção da prova                        | 50 minutos   |
 | 15/04    | Recuperação Paralela                                                   | Realizar atividades de recuperação para os alunos com dificuldades        | Atividades práticas                                   | Computadores, internet             | Análise das atividades                   | 50 minutos   |
 | 15/04    | Recuperação Paralela                                                   | Realizar atividades de recuperação para os alunos com dificuldades        | Atividades práticas                                   | Computadores, internet             | Análise das atividades                   | 50 minutos   |
-| 18/04    | Recuperação Paralela                                                   | Realizar atividades de recuperação para os alunos com dificuldades        | Atividades
-
- práticas                                   | Computadores, internet             | Análise das atividades                   | 50 minutos   |
 | 18/04    | Recuperação Paralela                                                   | Realizar atividades de recuperação para os alunos com dificuldades        | Atividades práticas                                   | Computadores, internet             | Análise das atividades                   | 50 minutos   |
+| 18/04    | Recuperação Paralela  | Realizar atividades de recuperação para os alunos com dificuldades        | Atividades práticas                                   | Computadores, internet             | Análise das atividades                   | 50 minutos   |
 
 ---
 
@@ -99,4 +97,3 @@
 | 01/07    | Recuperação Paralela                                                      | Realizar atividades de recuperação para os alunos com dificuldades    | Execução de atividades práticas                   | Computadores, internet             | Análise da execução das atividades       | 50 minutos   |
 | 01/07    | Recuperação Paralela                                                      | Realizar atividades de recuperação para os alunos com dificuldades    | Execução de atividades práticas                   | Computadores, internet             | Análise da execução das atividades       | 50 minutos   |
 
-Esses planos de aula são projetados para fornecer uma base sólida em Redes de Computadores, combinando teoria e prática, e garantindo que os alunos tenham oportunidades suficientes para aplicar o que aprenderam em atividades práticas e projetos.
